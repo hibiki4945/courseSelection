@@ -21,7 +21,12 @@ dependencies {
 	// jpa
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	// spring security
+	implementation 'org.springframework.security:spring-security'
 	implementation 'org.springframework.security:spring-security-core'
+	// cache
+	implementation 'org.springframework.boot:spring-boot-starter-cache'
+	// caffeine
+	implementation 'com.github.ben-manes.caffeine:caffeine'
 	// mysql connector
 	implementation 'mysql:mysql-connector-java:8.0.31'
 	// Spring Boot Starter Mail

@@ -5,4 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface EmployeeDao extends JpaRepository<Employee, String>{
 
+    public boolean existsByEmail(String Email);
+    
 }

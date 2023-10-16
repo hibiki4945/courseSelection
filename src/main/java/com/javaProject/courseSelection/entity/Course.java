@@ -5,9 +5,9 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import java.awt.TextArea;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Map;
 
 @Entity
 @Table(name = "course")
@@ -26,8 +26,11 @@ public class Course {
     @Column(name = "explanation")
     private String explanation;
     
+//    @Column(name = "class_time_table")
+//    private Map<String, Boolean> classTimeTable;
+    
     @Column(name = "class_time_table")
-    private Map<String, Boolean> classTimeTable;
+    private TextArea classTimeTable;
 
     @Column(name = "course_start_date")
     private LocalDate courseStartDate;
@@ -82,11 +85,11 @@ public class Course {
         this.explanation = explanation;
     }
 
-    public Map<String, Boolean> getClassTimeTable() {
+    public TextArea getClassTimeTable() {
         return classTimeTable;
     }
 
-    public void setClassTimeTable(Map<String, Boolean> classTimeTable) {
+    public void setClassTimeTable(TextArea classTimeTable) {
         this.classTimeTable = classTimeTable;
     }
 
@@ -151,7 +154,7 @@ public class Course {
         // TODO Auto-generated constructor stub
     }
 
-    public Course(String courseCode, String name, String teacher, String explanation, Map<String, Boolean> classTimeTable, LocalDate courseStartDate, LocalDate courseEndDate,
+    public Course(String courseCode, String name, String teacher, String explanation, TextArea classTimeTable, LocalDate courseStartDate, LocalDate courseEndDate,
             boolean onShelf, String coursePosition, LocalDateTime buildTime, LocalDateTime updateTime, String updateEmployee) {
         super();
         this.courseCode = courseCode;

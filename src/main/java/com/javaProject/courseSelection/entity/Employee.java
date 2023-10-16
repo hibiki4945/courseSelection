@@ -13,8 +13,8 @@ import java.time.LocalDateTime;
 public class Employee {
     
     @Id
-    @Column(name = "employee_number")
-    private String employeeNumber;
+    @Column(name = "employee_id")
+    private String employeeId;
 
     @Column(name = "name")
     private String name;
@@ -37,12 +37,13 @@ public class Employee {
     @Column(name = "activation")
     private boolean activation;
 
-    public String getEmployeeNumber() {
-        return employeeNumber;
+
+    public String getEmployeeId() {
+        return employeeId;
     }
 
-    public void setEmployeeNumber(String employeeNumber) {
-        this.employeeNumber = employeeNumber;
+    public void setEmployeeId(String employeeId) {
+        this.employeeId = employeeId;
     }
 
     public String getName() {
@@ -106,10 +107,9 @@ public class Employee {
         // TODO Auto-generated constructor stub
     }
 
-    public Employee(String employeeNumber, String name, String password, int authorizationRank, String email, LocalDate birthday, LocalDateTime registrationTime,
-            boolean activation) {
+    public Employee(String employeeId, String name, String password, int authorizationRank, String email, LocalDate birthday, LocalDateTime registrationTime, boolean activation) {
         super();
-        this.employeeNumber = employeeNumber;
+        this.employeeId = employeeId;
         this.name = name;
         this.password = password;
         this.authorizationRank = authorizationRank;
@@ -118,5 +118,6 @@ public class Employee {
         this.registrationTime = registrationTime;
         this.activation = activation;
     }
+
     
 }

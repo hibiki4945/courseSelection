@@ -5,44 +5,77 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import java.util.Map;
+import java.time.LocalDate;
 
 @Entity
-@Table(name = "student_number")
+@Table(name = "course_schedule")
 public class CourseSchedule {
 
     @Id
-    @Column(name = "student_number")
-    private String studentNumber;
+    @Column(name = "id")
+    private int id;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "course_code")
+    private String courseCode;
 
-    @Column(name = "selected_course")
-    private Map<String, Boolean> selected_course;
+    @Column(name = "course_date")
+    private LocalDate courseDate;
 
-    public String getStudentNumber() {
-        return studentNumber;
+    @Column(name = "course_syllabus")
+    private String courseSyllabus;
+
+    @Column(name = "course_program")
+    private String courseProgram;
+
+    @Column(name = "course_overview")
+    private String courseOverview;
+
+    public int getId() {
+        return id;
     }
 
-    public void setStudentNumber(String studentNumber) {
-        this.studentNumber = studentNumber;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getCourseCode() {
+        return courseCode;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
     }
 
-    public Map<String, Boolean> getSelected_course() {
-        return selected_course;
+    public LocalDate getCourseDate() {
+        return courseDate;
     }
 
-    public void setSelected_course(Map<String, Boolean> selected_course) {
-        this.selected_course = selected_course;
+    public void setCourseDate(LocalDate courseDate) {
+        this.courseDate = courseDate;
+    }
+
+    public String getCourseSyllabus() {
+        return courseSyllabus;
+    }
+
+    public void setCourseSyllabus(String courseSyllabus) {
+        this.courseSyllabus = courseSyllabus;
+    }
+
+    public String getCourseProgram() {
+        return courseProgram;
+    }
+
+    public void setCourseProgram(String courseProgram) {
+        this.courseProgram = courseProgram;
+    }
+
+    public String getCourseOverview() {
+        return courseOverview;
+    }
+
+    public void setCourseOverview(String courseOverview) {
+        this.courseOverview = courseOverview;
     }
 
     public CourseSchedule() {
@@ -50,11 +83,14 @@ public class CourseSchedule {
         // TODO Auto-generated constructor stub
     }
 
-    public CourseSchedule(String studentNumber, String name, Map<String, Boolean> selected_course) {
+    public CourseSchedule(int id, String courseCode, LocalDate courseDate, String courseSyllabus, String courseProgram, String courseOverview) {
         super();
-        this.studentNumber = studentNumber;
-        this.name = name;
-        this.selected_course = selected_course;
+        this.id = id;
+        this.courseCode = courseCode;
+        this.courseDate = courseDate;
+        this.courseSyllabus = courseSyllabus;
+        this.courseProgram = courseProgram;
+        this.courseOverview = courseOverview;
     }
-    
+
 }

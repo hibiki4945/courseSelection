@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS `employee` (
-  `employee_number` varchar(10) NOT NULL,
+  `employee_id` varchar(10) NOT NULL,
   `name` varchar(10) NOT NULL,
   `password` varchar(20) NOT NULL,
   `authorization_rank` int NOT NULL DEFAULT '1',
@@ -7,11 +7,11 @@ CREATE TABLE IF NOT EXISTS `employee` (
   `birthday` date NOT NULL,
   `registration_time` datetime NOT NULL,
   `activation` tinyint NOT NULL DEFAULT '0',
-  PRIMARY KEY (`employee_number`)
+  PRIMARY KEY (`employee_id`)
 );
 
 CREATE TABLE IF NOT EXISTS `student` (
-  `student_number` varchar(10) NOT NULL,
+  `student_id` varchar(10) NOT NULL,
   `name` varchar(10) NOT NULL,
   `password` varchar(20) NOT NULL,
   `email` varchar(40) NOT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `student` (
   `registration_time` datetime NOT NULL,
   `activation` tinyint NOT NULL DEFAULT '0',
   `subsidy` tinyint NOT NULL DEFAULT '0',
-  PRIMARY KEY (`student_number`)
+  PRIMARY KEY (`student_id`)
 );
 
 CREATE TABLE IF NOT EXISTS `course` (
@@ -39,10 +39,10 @@ CREATE TABLE IF NOT EXISTS `course` (
 );
 
 CREATE TABLE IF NOT EXISTS `student_course` (
-  `student_number` varchar(10) NOT NULL,
+  `student_id` varchar(10) NOT NULL,
   `name` varchar(10) NOT NULL,
   `selected_course` json DEFAULT NULL,
-  PRIMARY KEY (`student_number`)
+  PRIMARY KEY (`student_id`)
 );
 
 CREATE TABLE IF NOT EXISTS `course_schedule` (

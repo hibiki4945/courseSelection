@@ -1,49 +1,50 @@
-package com.javaProject.courseSelection.entity;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+package com.javaProject.courseSelection.vo;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-@Entity
-@Table(name = "student")
-public class Student {
-    
-    @Id
-    @Column(name = "student_id")
-    private String studentId;
+public class EmployeeFullRes {
 
-    @Column(name = "name")
+    private String code;
+    
+    private String message;
+    
+    private String employeeId;
+    
     private String name;
-
-    @Column(name = "password")
-    private String password;
     
-    @Column(name = "email")
+    private int authorizationRank;
+    
     private String email;
 
-    @Column(name = "birthday")
     private LocalDate birthday;
 
-    @Column(name = "registration_time")
     private LocalDateTime registrationTime;
-
-    @Column(name = "activation")
+    
     private boolean activation;
 
-    @Column(name = "subsidy")
-    private boolean subsidy;
-
-
-    public String getStudentId() {
-        return studentId;
+    public String getCode() {
+        return code;
     }
 
-    public void setStudentId(String studentId) {
-        this.studentId = studentId;
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(String employeeId) {
+        this.employeeId = employeeId;
     }
 
     public String getName() {
@@ -54,12 +55,12 @@ public class Student {
         this.name = name;
     }
 
-    public String getPassword() {
-        return password;
+    public int getAuthorizationRank() {
+        return authorizationRank;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setAuthorizationRank(int authorizationRank) {
+        this.authorizationRank = authorizationRank;
     }
 
     public String getEmail() {
@@ -94,29 +95,23 @@ public class Student {
         this.activation = activation;
     }
 
-    public boolean isSubsidy() {
-        return subsidy;
-    }
-
-    public void setSubsidy(boolean subsidy) {
-        this.subsidy = subsidy;
-    }
-
-    public Student() {
+    public EmployeeFullRes() {
         super();
         // TODO Auto-generated constructor stub
     }
 
-    public Student(String studentId, String name, String password, String email, LocalDate birthday, LocalDateTime registrationTime, boolean activation, boolean subsidy) {
+    public EmployeeFullRes(String code, String message, String employeeId, String name, int authorizationRank, String email, LocalDate birthday, LocalDateTime registrationTime,
+            boolean activation) {
         super();
-        this.studentId = studentId;
+        this.code = code;
+        this.message = message;
+        this.employeeId = employeeId;
         this.name = name;
-        this.password = password;
+        this.authorizationRank = authorizationRank;
         this.email = email;
         this.birthday = birthday;
         this.registrationTime = registrationTime;
         this.activation = activation;
-        this.subsidy = subsidy;
     }
 
     
