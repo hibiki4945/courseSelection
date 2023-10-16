@@ -1,6 +1,7 @@
 package com.javaProject.courseSelection.service.ifs;
 
 import com.javaProject.courseSelection.vo.EmployeeBasicRes;
+import com.javaProject.courseSelection.vo.EmployeeChangePasswordReq;
 import com.javaProject.courseSelection.vo.EmployeeCreateReq;
 import com.javaProject.courseSelection.vo.EmployeeFullRes;
 
@@ -14,7 +15,7 @@ public interface EmployeeService {
 //  人員 登出
     public EmployeeBasicRes Logout(HttpSession httpSession);
 //  人員 修改密碼
-    public EmployeeBasicRes ChangePassword(String EmployeeId, String OldPassword, String NewPassword, String NewPasswordCheck);
+    public EmployeeBasicRes ChangePassword(EmployeeChangePasswordReq eChangePasswordReq);
 //  人員 啟用帳號
     public EmployeeBasicRes Inactive(String EmployeeId);
 //  人員 忘記密碼(寄驗證碼到信箱)

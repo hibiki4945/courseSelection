@@ -2,6 +2,7 @@ package com.javaProject.courseSelection.controller;
 
 import com.javaProject.courseSelection.service.ifs.EmployeeService;
 import com.javaProject.courseSelection.vo.EmployeeBasicRes;
+import com.javaProject.courseSelection.vo.EmployeeChangePasswordReq;
 import com.javaProject.courseSelection.vo.EmployeeCreateReq;
 import com.javaProject.courseSelection.vo.EmployeeLoginReq;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +50,13 @@ public class EmployeeController {
     public EmployeeBasicRes Logout(HttpSession httpSession) {
 
         return eService.Logout(httpSession);
+        
+    }
+
+    @PostMapping("change_password")
+    public EmployeeBasicRes ChangePassword(@RequestBody EmployeeChangePasswordReq eChangePasswordReq) {
+
+        return eService.ChangePassword(eChangePasswordReq);
         
     }
     

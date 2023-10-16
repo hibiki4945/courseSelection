@@ -5,6 +5,7 @@ import com.javaProject.courseSelection.entity.Employee;
 import com.javaProject.courseSelection.repository.EmployeeDao;
 import com.javaProject.courseSelection.service.ifs.EmployeeService;
 import com.javaProject.courseSelection.vo.EmployeeBasicRes;
+import com.javaProject.courseSelection.vo.EmployeeChangePasswordReq;
 import com.javaProject.courseSelection.vo.EmployeeCreateReq;
 import com.javaProject.courseSelection.vo.EmployeeFullRes;
 import org.slf4j.Logger;
@@ -30,9 +31,10 @@ class EmployeeServiceImpl implements EmployeeService{
     @Autowired
     private EmployeeDao eDao;
 
-    private String emailPattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
-    private String pwdPattern = "^.{8,30}$";
+    private String employeeIdPattern = "^.{2,10}$";
     private String namePattern = "^.{2,30}$";
+    private String pwdPattern = "^.{8,30}$";
+    private String emailPattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
     
     @Override
     public EmployeeBasicRes Create(EmployeeCreateReq createReq0) {
@@ -46,8 +48,8 @@ class EmployeeServiceImpl implements EmployeeService{
         if(!StringUtils.hasText(createReq.getEmployeeId())) {
             return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_EMPTY_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_EMPTY_ERROR.getMessage(), createReq.getEmployeeId(), createReq.getName(), 0, false);
         }
-        if(createReq.getEmployeeId().length() > 10) {
-            return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_OVER_LENGTH_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_OVER_LENGTH_ERROR.getMessage(), createReq.getEmployeeId(), createReq.getName(), 0, false);
+        if(!createReq.getEmployeeId().matches(employeeIdPattern)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_FORMAT_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_FORMAT_ERROR.getMessage(), createReq.getEmployeeId(), createReq.getName(), 0, false);
         }
         if(!StringUtils.hasText(createReq.getName())) {
             return new EmployeeBasicRes(EmployeeRtnCode.NAME_EMPTY_ERROR.getCode(), EmployeeRtnCode.NAME_EMPTY_ERROR.getMessage(), createReq.getEmployeeId(), createReq.getName(), 0, false);
@@ -129,9 +131,51 @@ class EmployeeServiceImpl implements EmployeeService{
     }
 
     @Override
-    public EmployeeBasicRes ChangePassword(String EmployeeId, String OldPassword, String NewPassword, String NewPasswordCheck) {
-        // TODO Auto-generated method stub
-        return null;
+    public EmployeeBasicRes ChangePassword(EmployeeChangePasswordReq eChangePasswordReq) {
+
+//      變數的本地化
+        String employeeId = eChangePasswordReq.getEmployeeId();
+        String oldPassword = eChangePasswordReq.getOldPassWord();
+        String newPassword = eChangePasswordReq.getNewPassWord();
+        String newPasswordCheck = eChangePasswordReq.getNewPassWordCheck();
+
+        if(!StringUtils.hasText(employeeId)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_EMPTY_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_EMPTY_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        if(!employeeId.matches(employeeIdPattern)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_FORMAT_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_FORMAT_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        if(!oldPassword.matches(pwdPattern)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.OLD_PASSWORD_FORMAT_ERROR.getCode(), EmployeeRtnCode.OLD_PASSWORD_FORMAT_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        if(!newPassword.matches(pwdPattern)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.NEW_PASSWORD_FORMAT_ERROR.getCode(), EmployeeRtnCode.NEW_PASSWORD_FORMAT_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        if(newPassword.matches(oldPassword)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.NEW_PASSWORD_NOT_CHANGE_ERROR.getCode(), EmployeeRtnCode.NEW_PASSWORD_NOT_CHANGE_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        if(!newPasswordCheck.matches(pwdPattern)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.NEW_PASSWORD_CHECK_FORMAT_ERROR.getCode(), EmployeeRtnCode.NEW_PASSWORD_CHECK_FORMAT_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        if(!newPassword.matches(newPasswordCheck)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.NEW_PASSWORD_CHECK_NOT_EQUAL_ERROR.getCode(), EmployeeRtnCode.NEW_PASSWORD_CHECK_NOT_EQUAL_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        Employee res0 = eDao.findById(employeeId).get();
+        if(res0 == null) {
+            return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_NOT_EXIST_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_NOT_EXIST_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        if(encoder.encode(oldPassword).matches(res0.getPassword())) {
+            return new EmployeeBasicRes(EmployeeRtnCode.PASSWORD_ERROR.getCode(), EmployeeRtnCode.PASSWORD_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+
+        res0.setPassword(encoder.encode(newPassword));
+        Employee res = eDao.save(res0);
+        if(res == null) {
+            return new EmployeeBasicRes(EmployeeRtnCode.DAO_ERROR.getCode(), EmployeeRtnCode.DAO_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        
+        return new EmployeeBasicRes(EmployeeRtnCode.SUCCESSFUL.getCode(), EmployeeRtnCode.SUCCESSFUL.getMessage(), employeeId, null, 0, false);
+         
     }
 
     @Override
