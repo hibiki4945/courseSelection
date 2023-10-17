@@ -286,7 +286,7 @@ class EmployeeServiceImpl implements EmployeeService{
         Employee res = eDao.save(res0);
         if(res == null) {
             return new EmployeeBasicRes(EmployeeRtnCode.DAO_ERROR.getCode(), EmployeeRtnCode.DAO_ERROR.getMessage(), employeeId, null, 0, false);
-        }
+        } 
 
         forgetPasswordToken = RandomString.make(20);
         
