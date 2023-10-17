@@ -84,7 +84,7 @@ public class EmployeeController {
         
     }
 
-    @CrossOrigin(origins = "*")
+    @CrossOrigin(origins = "*") 
     @PostMapping("login_check")
     public EmployeeBasicRes LoginCheck() {
         
