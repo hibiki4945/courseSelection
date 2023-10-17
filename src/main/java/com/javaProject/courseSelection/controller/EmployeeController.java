@@ -23,6 +23,7 @@ public class EmployeeController {
     @Autowired
     private EmployeeService eService;
 
+    @CrossOrigin(origins = "*") 
     @PostMapping("create")
     public EmployeeBasicRes Create(@RequestBody EmployeeCreateReq eCreateReq) {
 
@@ -30,6 +31,7 @@ public class EmployeeController {
         
     }
 
+    @CrossOrigin(origins = "*")
     @PostMapping(value = "login")
     public EmployeeBasicRes Login(@RequestBody EmployeeLoginReq req, HttpSession httpSession) {
 
@@ -49,6 +51,7 @@ public class EmployeeController {
         return res;
     }
 
+    @CrossOrigin(origins = "*") 
     @PostMapping(value = "logout")
     public EmployeeBasicRes Logout(HttpSession httpSession) {
 
@@ -56,27 +59,31 @@ public class EmployeeController {
         
     }
 
+    @CrossOrigin(origins = "*") 
     @PostMapping("change_password")
     public EmployeeBasicRes ChangePassword(@RequestBody EmployeeChangePasswordReq eChangePasswordReq) {
 
         return eService.ChangePassword(eChangePasswordReq);
         
     }
-    
+
+    @CrossOrigin(origins = "*") 
     @PostMapping("inactive")
     public EmployeeBasicRes Inactive(@RequestBody EmployeeOnlyReq eOnlyReq) {
 
         return eService.Inactive(eOnlyReq.getEmployeeId());
         
     }
-    
+
+    @CrossOrigin(origins = "*") 
     @PostMapping("forget_password")
     public EmployeeBasicRes ForgetPassword(@RequestBody EmployeeOnlyReq eOnlyReq) {
         
         return eService.ForgetPassword(eOnlyReq.getEmployeeId());
         
     }
-    
+
+    @CrossOrigin(origins = "*") 
     @PostMapping("reset_password")
     public EmployeeBasicRes ResetPassword(@RequestBody EmployeeResetPasswordReq eResetPasswordReq) {
         

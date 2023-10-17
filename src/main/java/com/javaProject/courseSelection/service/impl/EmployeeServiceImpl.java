@@ -123,7 +123,7 @@ class EmployeeServiceImpl implements EmployeeService{
         
         if(!encoder.matches(Password, res.getPassword())) {
 //          記得返回 錯誤訊息
-            return new EmployeeBasicRes(EmployeeRtnCode.FAILED.getCode(), EmployeeRtnCode.FAILED.getMessage(), null, null, 0, false);
+            return new EmployeeBasicRes(EmployeeRtnCode.PASSWORD_ERROR.getCode(), EmployeeRtnCode.PASSWORD_ERROR.getMessage(), null, null, 0, false);
         }
         
         System.out.println("login successed!");
