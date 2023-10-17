@@ -296,7 +296,7 @@ class EmployeeServiceImpl implements EmployeeService{
 
     @Override
     public EmployeeFullRes CheckAllInfo(String EmployeeId, String TargetEmployeeId) {
-
+//        ?
         return null;
     }
 
