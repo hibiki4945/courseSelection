@@ -300,4 +300,11 @@ class EmployeeServiceImpl implements EmployeeService{
         return null;
     }
 
+
+    @Override
+    public EmployeeBasicRes LoginCheck() {
+        return null;
+    }
+        
+    
 }

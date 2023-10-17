@@ -8,6 +8,7 @@ import com.javaProject.courseSelection.vo.EmployeeLoginReq;
 import com.javaProject.courseSelection.vo.EmployeeOnlyReq;
 import com.javaProject.courseSelection.vo.EmployeeResetPasswordReq;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -80,6 +81,14 @@ public class EmployeeController {
     public EmployeeBasicRes ResetPassword(@RequestBody EmployeeResetPasswordReq eResetPasswordReq) {
         
         return eService.ResetPassword(eResetPasswordReq.getEmployeeId(), eResetPasswordReq.getInputToken(), eResetPasswordReq.getNewPassword(), eResetPasswordReq.getNewPasswordCheck());
+        
+    }
+
+    @CrossOrigin(origins = "*")
+    @PostMapping("login_check")
+    public EmployeeBasicRes LoginCheck() {
+        
+        return eService.LoginCheck();
         
     }
     

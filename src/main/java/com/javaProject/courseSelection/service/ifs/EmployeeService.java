@@ -24,5 +24,7 @@ public interface EmployeeService {
     public EmployeeBasicRes ResetPassword(String employeeId, String inputToken, String newPassword, String newPasswordCheck);
 //  人員 查詢 (其它)人員的所有資訊
     public EmployeeFullRes CheckAllInfo(String employeeId, String targetEmployeeId);
+//  確認 是否登入
+    public EmployeeBasicRes LoginCheck();
     
 }
