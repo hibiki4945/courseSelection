@@ -22,7 +22,8 @@ public enum EmployeeRtnCode {
     NEW_PASSWORD_CHECK_FORMAT_ERROR("400", "NewPasswordCheck Format Error!"),
     NEW_PASSWORD_CHECK_NOT_EQUAL_ERROR("400", "NewPasswordCheck Not Equal Error!"),
     PASSWORD_ERROR("400", "Password Error!"),
-    DAO_ERROR("400", "Dao Error!");
+    DAO_ERROR("400", "Dao Error!"),
+    TOKEN_ERROR("400", "Token Error!");
     
     private String code;
     

@@ -8,16 +8,22 @@ import com.javaProject.courseSelection.vo.EmployeeBasicRes;
 import com.javaProject.courseSelection.vo.EmployeeChangePasswordReq;
 import com.javaProject.courseSelection.vo.EmployeeCreateReq;
 import com.javaProject.courseSelection.vo.EmployeeFullRes;
+import net.bytebuddy.utility.RandomString;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpSession;
 
+import java.io.UnsupportedEncodingException;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
@@ -28,9 +34,14 @@ class EmployeeServiceImpl implements EmployeeService{
     
     private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
     
+    private String forgetPasswordToken; 
+    
     @Autowired
     private EmployeeDao eDao;
 
+    @Autowired
+    private JavaMailSender mailSender;
+    
     private String employeeIdPattern = "^.{2,10}$";
     private String namePattern = "^.{2,30}$";
     private String pwdPattern = "^.{8,30}$";
@@ -98,7 +109,6 @@ class EmployeeServiceImpl implements EmployeeService{
         
     }
     
-//    ?
     @Cacheable(cacheNames = "employee_addInfo", key = "#EmployeeId", unless = "#result.code != '200'")
     @Override
     public EmployeeBasicRes Login(String EmployeeId, String Password) {
@@ -179,27 +189,116 @@ class EmployeeServiceImpl implements EmployeeService{
     }
 
     @Override
-    public EmployeeBasicRes Inactive(String EmployeeId) {
-        // TODO Auto-generated method stub
-        return null;
+    public EmployeeBasicRes Inactive(String employeeId) {
+
+        Employee res0 = eDao.findById(employeeId).get();
+        if(!res0.isActivation()) {
+            res0.setActivation(true);
+        }
+        Employee res = eDao.save(res0);
+        if(res == null) {
+            return new EmployeeBasicRes(EmployeeRtnCode.DAO_ERROR.getCode(), EmployeeRtnCode.DAO_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        
+        return new EmployeeBasicRes(EmployeeRtnCode.SUCCESSFUL.getCode(), EmployeeRtnCode.SUCCESSFUL.getMessage(), employeeId, null, 0, false);
+        
     }
 
     @Override
-    public EmployeeBasicRes ForgetPassword(String EmployeeId) {
-        // TODO Auto-generated method stub
-        return null;
+    public EmployeeBasicRes ForgetPassword(String employeeId) {
+        
+        Employee res = eDao.findById(employeeId).get();
+        if(res == null) {
+            return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_NOT_EXIST_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_NOT_EXIST_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        String email = res.getEmail();
+//        System.out.println("email: "+email);
+        
+        forgetPasswordToken = RandomString.make(20);
+        System.out.println("forgetPasswordToken: "+forgetPasswordToken);
+        
+        MimeMessage message = mailSender.createMimeMessage();
+        MimeMessageHelper helper = new MimeMessageHelper(message);
+
+        try {
+            helper.setFrom("java12629@gmail.com", "xx選課系統");
+            helper.setTo(email);
+        } catch (UnsupportedEncodingException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (MessagingException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        String subject = "已要求重新設定密碼";
+        String content = "<p>你好, </p>" + "<p>您已要求重新設定密碼</p>" + "<p>驗證碼:</p>" + "<p>" + forgetPasswordToken + "</p>" + "<br>"
+                + "<p>驗證碼有效時間為10分鐘</p>" + "<p>感謝您利用xx選課系統</p>";
+
+        try {
+            helper.setSubject(subject);
+            helper.setText(content, true);
+        } catch (MessagingException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        // send to user email
+        mailSender.send(message);
+        
+        return new EmployeeBasicRes(EmployeeRtnCode.SUCCESSFUL.getCode(), EmployeeRtnCode.SUCCESSFUL.getMessage(), employeeId, null, 0, false);
+        
     }
 
     @Override
-    public EmployeeBasicRes ResetPassword(String EmployeeId, String NewPassword, String NewPasswordCheck) {
-        // TODO Auto-generated method stub
-        return null;
+    public EmployeeBasicRes ResetPassword(String employeeId0, String inputToken0, String newPassword0, String newPasswordCheck0) {
+        
+//      變數的本地化
+        String employeeId = employeeId0;
+        String inputToken = inputToken0;
+        String newPassword = newPassword0;
+        String newPasswordCheck = newPasswordCheck0;
+
+        if(!StringUtils.hasText(employeeId)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_EMPTY_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_EMPTY_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        if(!employeeId.matches(employeeIdPattern)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_FORMAT_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_FORMAT_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        if(!inputToken.matches(forgetPasswordToken)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.TOKEN_ERROR.getCode(), EmployeeRtnCode.TOKEN_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        if(!newPassword.matches(pwdPattern)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.NEW_PASSWORD_FORMAT_ERROR.getCode(), EmployeeRtnCode.NEW_PASSWORD_FORMAT_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        if(!newPasswordCheck.matches(pwdPattern)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.NEW_PASSWORD_CHECK_FORMAT_ERROR.getCode(), EmployeeRtnCode.NEW_PASSWORD_CHECK_FORMAT_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        if(!newPassword.matches(newPasswordCheck)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.NEW_PASSWORD_CHECK_NOT_EQUAL_ERROR.getCode(), EmployeeRtnCode.NEW_PASSWORD_CHECK_NOT_EQUAL_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        Employee res0 = eDao.findById(employeeId).get();
+        if(res0 == null) {
+            return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_NOT_EXIST_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_NOT_EXIST_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+
+        res0.setPassword(encoder.encode(newPassword));
+        Employee res = eDao.save(res0);
+        if(res == null) {
+            return new EmployeeBasicRes(EmployeeRtnCode.DAO_ERROR.getCode(), EmployeeRtnCode.DAO_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+
+        forgetPasswordToken = RandomString.make(20);
+        
+        return new EmployeeBasicRes(EmployeeRtnCode.SUCCESSFUL.getCode(), EmployeeRtnCode.SUCCESSFUL.getMessage(), employeeId, null, 0, false);
+         
     }
 
     @Override
     public EmployeeFullRes CheckAllInfo(String EmployeeId, String TargetEmployeeId) {
-        // TODO Auto-generated method stub
-        return null;
+
+        
+        
     }
 
 }
