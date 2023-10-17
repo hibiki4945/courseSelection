@@ -5,6 +5,8 @@ import com.javaProject.courseSelection.vo.EmployeeBasicRes;
 import com.javaProject.courseSelection.vo.EmployeeChangePasswordReq;
 import com.javaProject.courseSelection.vo.EmployeeCreateReq;
 import com.javaProject.courseSelection.vo.EmployeeLoginReq;
+import com.javaProject.courseSelection.vo.EmployeeOnlyReq;
+import com.javaProject.courseSelection.vo.EmployeeResetPasswordReq;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -57,6 +59,27 @@ public class EmployeeController {
     public EmployeeBasicRes ChangePassword(@RequestBody EmployeeChangePasswordReq eChangePasswordReq) {
 
         return eService.ChangePassword(eChangePasswordReq);
+        
+    }
+    
+    @PostMapping("inactive")
+    public EmployeeBasicRes Inactive(@RequestBody EmployeeOnlyReq eOnlyReq) {
+
+        return eService.Inactive(eOnlyReq.getEmployeeId());
+        
+    }
+    
+    @PostMapping("forget_password")
+    public EmployeeBasicRes ForgetPassword(@RequestBody EmployeeOnlyReq eOnlyReq) {
+        
+        return eService.ForgetPassword(eOnlyReq.getEmployeeId());
+        
+    }
+    
+    @PostMapping("reset_password")
+    public EmployeeBasicRes ResetPassword(@RequestBody EmployeeResetPasswordReq eResetPasswordReq) {
+        
+        return eService.ResetPassword(eResetPasswordReq.getEmployeeId(), eResetPasswordReq.getInputToken(), eResetPasswordReq.getNewPassword(), eResetPasswordReq.getNewPasswordCheck());
         
     }
     
