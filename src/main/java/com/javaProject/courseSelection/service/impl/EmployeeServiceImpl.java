@@ -128,7 +128,7 @@ class EmployeeServiceImpl implements EmployeeService{
         
         System.out.println("login successed!");
         
-        return new EmployeeBasicRes(EmployeeRtnCode.SUCCESSFUL.getCode(), EmployeeRtnCode.SUCCESSFUL.getMessage(), res.getEmployeeId(), res.getName(), 0, false);
+        return new EmployeeBasicRes(EmployeeRtnCode.SUCCESSFUL.getCode(), EmployeeRtnCode.SUCCESSFUL.getMessage(), res.getEmployeeId(), res.getName(), res.getAuthorizationRank(), res.isActivation());
     }
 
     @Override
@@ -145,9 +145,9 @@ class EmployeeServiceImpl implements EmployeeService{
 
 //      變數的本地化
         String employeeId = eChangePasswordReq.getEmployeeId();
-        String oldPassword = eChangePasswordReq.getOldPassWord();
-        String newPassword = eChangePasswordReq.getNewPassWord();
-        String newPasswordCheck = eChangePasswordReq.getNewPassWordCheck();
+        String oldPassword = eChangePasswordReq.getOldPassword();
+        String newPassword = eChangePasswordReq.getNewPassword();
+        String newPasswordCheck = eChangePasswordReq.getNewPasswordCheck();
 
         if(!StringUtils.hasText(employeeId)) {
             return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_EMPTY_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_EMPTY_ERROR.getMessage(), employeeId, null, 0, false);
@@ -155,14 +155,23 @@ class EmployeeServiceImpl implements EmployeeService{
         if(!employeeId.matches(employeeIdPattern)) {
             return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_FORMAT_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_FORMAT_ERROR.getMessage(), employeeId, null, 0, false);
         }
+        if(!StringUtils.hasText(oldPassword)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.OLD_PASSWORD_EMPTY_ERROR.getCode(), EmployeeRtnCode.OLD_PASSWORD_EMPTY_ERROR.getMessage(), employeeId, null, 0, false);
+        }
         if(!oldPassword.matches(pwdPattern)) {
             return new EmployeeBasicRes(EmployeeRtnCode.OLD_PASSWORD_FORMAT_ERROR.getCode(), EmployeeRtnCode.OLD_PASSWORD_FORMAT_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        if(!StringUtils.hasText(newPassword)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.NEW_PASSWORD_EMPTY_ERROR.getCode(), EmployeeRtnCode.NEW_PASSWORD_EMPTY_ERROR.getMessage(), employeeId, null, 0, false);
         }
         if(!newPassword.matches(pwdPattern)) {
             return new EmployeeBasicRes(EmployeeRtnCode.NEW_PASSWORD_FORMAT_ERROR.getCode(), EmployeeRtnCode.NEW_PASSWORD_FORMAT_ERROR.getMessage(), employeeId, null, 0, false);
         }
         if(newPassword.matches(oldPassword)) {
             return new EmployeeBasicRes(EmployeeRtnCode.NEW_PASSWORD_NOT_CHANGE_ERROR.getCode(), EmployeeRtnCode.NEW_PASSWORD_NOT_CHANGE_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        if(!StringUtils.hasText(newPasswordCheck)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.NEW_PASSWORD_CHECK_EMPTY_ERROR.getCode(), EmployeeRtnCode.NEW_PASSWORD_CHECK_EMPTY_ERROR.getMessage(), employeeId, null, 0, false);
         }
         if(!newPasswordCheck.matches(pwdPattern)) {
             return new EmployeeBasicRes(EmployeeRtnCode.NEW_PASSWORD_CHECK_FORMAT_ERROR.getCode(), EmployeeRtnCode.NEW_PASSWORD_CHECK_FORMAT_ERROR.getMessage(), employeeId, null, 0, false);
@@ -182,6 +191,10 @@ class EmployeeServiceImpl implements EmployeeService{
         Employee res = eDao.save(res0);
         if(res == null) {
             return new EmployeeBasicRes(EmployeeRtnCode.DAO_ERROR.getCode(), EmployeeRtnCode.DAO_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        
+        if(!res0.isActivation()) {
+            Inactive(res0.getEmployeeId());
         }
         
         return new EmployeeBasicRes(EmployeeRtnCode.SUCCESSFUL.getCode(), EmployeeRtnCode.SUCCESSFUL.getMessage(), employeeId, null, 0, false);

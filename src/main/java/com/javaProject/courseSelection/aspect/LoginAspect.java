@@ -39,6 +39,7 @@ public class LoginAspect {
         System.out.println("執行的方法名稱: "+signature.getName());
         logger.info("api: "+signature.getName());
         HttpServletRequest request = ((ServletRequestAttributes)RequestContextHolder.getRequestAttributes()).getRequest();
+//        HttpServletResponse response = 
         HttpSession session = request.getSession();
         String account = (String)session.getAttribute("account");
         String pwd = (String)session.getAttribute("password");

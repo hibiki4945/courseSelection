@@ -4,11 +4,11 @@ public class EmployeeChangePasswordReq {
 
     private String employeeId;
     
-    private String oldPassWord;
+    private String oldPassword;
     
-    private String newPassWord;
+    private String newPassword;
     
-    private String newPassWordCheck;
+    private String newPasswordCheck;
 
     public String getEmployeeId() {
         return employeeId;
@@ -18,28 +18,28 @@ public class EmployeeChangePasswordReq {
         this.employeeId = employeeId;
     }
 
-    public String getOldPassWord() {
-        return oldPassWord;
+    public String getOldPassword() {
+        return oldPassword;
     }
 
-    public void setOldPassWord(String oldPassWord) {
-        this.oldPassWord = oldPassWord;
+    public void setOldPassword(String oldPassword) {
+        this.oldPassword = oldPassword;
     }
 
-    public String getNewPassWord() {
-        return newPassWord;
+    public String getNewPassword() {
+        return newPassword;
     }
 
-    public void setNewPassWord(String newPassWord) {
-        this.newPassWord = newPassWord;
+    public void setNewPassword(String newPassword) {
+        this.newPassword = newPassword;
     }
 
-    public String getNewPassWordCheck() {
-        return newPassWordCheck;
+    public String getNewPasswordCheck() {
+        return newPasswordCheck;
     }
 
-    public void setNewPassWordCheck(String newPassWordCheck) {
-        this.newPassWordCheck = newPassWordCheck;
+    public void setNewPasswordCheck(String newPasswordCheck) {
+        this.newPasswordCheck = newPasswordCheck;
     }
 
     public EmployeeChangePasswordReq() {
@@ -47,12 +47,13 @@ public class EmployeeChangePasswordReq {
         // TODO Auto-generated constructor stub
     }
 
-    public EmployeeChangePasswordReq(String employeeId, String oldPassWord, String newPassWord, String newPassWordCheck) {
+    public EmployeeChangePasswordReq(String employeeId, String oldPassword, String newPassword, String newPasswordCheck) {
         super();
         this.employeeId = employeeId;
-        this.oldPassWord = oldPassWord;
-        this.newPassWord = newPassWord;
-        this.newPassWordCheck = newPassWordCheck;
+        this.oldPassword = oldPassword;
+        this.newPassword = newPassword;
+        this.newPasswordCheck = newPasswordCheck;
     }
+
 
 }
