@@ -23,15 +23,15 @@ public class EmployeeController {
     @Autowired
     private EmployeeService eService;
 
-    @CrossOrigin(origins = "*") 
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
     @PostMapping("create")
     public EmployeeBasicRes Create(@RequestBody EmployeeCreateReq eCreateReq) {
 
         return eService.Create(eCreateReq);
         
     }
-
-    @CrossOrigin(origins = "*")
+    
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
     @PostMapping(value = "login")
     public EmployeeBasicRes Login(@RequestBody EmployeeLoginReq req, HttpSession httpSession) {
 
@@ -51,7 +51,7 @@ public class EmployeeController {
         return res;
     }
 
-    @CrossOrigin(origins = "*") 
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
     @PostMapping(value = "logout")
     public EmployeeBasicRes Logout(HttpSession httpSession) {
 
@@ -59,7 +59,7 @@ public class EmployeeController {
         
     }
 
-    @CrossOrigin(origins = "*") 
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
     @PostMapping("change_password")
     public EmployeeBasicRes ChangePassword(@RequestBody EmployeeChangePasswordReq eChangePasswordReq) {
 
@@ -67,7 +67,7 @@ public class EmployeeController {
         
     }
 
-    @CrossOrigin(origins = "*") 
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
     @PostMapping("inactive")
     public EmployeeBasicRes Inactive(@RequestBody EmployeeOnlyReq eOnlyReq) {
 
@@ -75,7 +75,7 @@ public class EmployeeController {
         
     }
 
-    @CrossOrigin(origins = "*") 
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
     @PostMapping("forget_password")
     public EmployeeBasicRes ForgetPassword(@RequestBody EmployeeOnlyReq eOnlyReq) {
         
@@ -83,7 +83,7 @@ public class EmployeeController {
         
     }
 
-    @CrossOrigin(origins = "*") 
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
     @PostMapping("reset_password")
     public EmployeeBasicRes ResetPassword(@RequestBody EmployeeResetPasswordReq eResetPasswordReq) {
         
@@ -91,7 +91,7 @@ public class EmployeeController {
         
     }
 
-    @CrossOrigin(origins = "*") 
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
     @PostMapping("login_check")
     public EmployeeBasicRes LoginCheck() {
         
