@@ -195,7 +195,7 @@ class EmployeeServiceImpl implements EmployeeService{
         
         if(!res0.isActivation()) {
             Inactive(res0.getEmployeeId());
-        }
+        } 
         
         return new EmployeeBasicRes(EmployeeRtnCode.SUCCESSFUL.getCode(), EmployeeRtnCode.SUCCESSFUL.getMessage(), employeeId, null, 0, false);
          
