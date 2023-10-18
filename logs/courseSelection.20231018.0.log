@@ -1,0 +1,1214 @@
+09:02:35.351 INFO  [main][CourseSelectionApplication.logStarting(StartupInfoLogger.java:55)] Starting CourseSelectionApplication using Java 17.0.2 on DESKTOP-RMCKRPA with PID 11980 (C:\Users\HIBIKI\git\courseSelection\bin\main started by HIBIKI in C:\Users\HIBIKI\git\courseSelection)
+09:02:35.362 INFO  [main][CourseSelectionApplication.logStartupProfileInfo(SpringApplication.java:631)] No active profile set, falling back to 1 default profile: "default"
+09:02:37.884 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:02:38.177 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] Finished Spring Data repository scanning in 254 ms. Found 5 JPA repository interfaces.
+09:02:41.836 INFO  [main][TomcatWebServer.initialize(TomcatWebServer.java:108)] Tomcat initialized with port(s): 8080 (http)
+09:02:41.859 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Initializing ProtocolHandler ["http-nio-8080"]
+09:02:41.864 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Starting service [Tomcat]
+09:02:41.865 INFO  [main][StandardEngine.log(DirectJDKLog.java:173)] Starting Servlet engine: [Apache Tomcat/9.0.80]
+09:02:42.297 INFO  [main][[/].log(DirectJDKLog.java:173)] Initializing Spring embedded WebApplicationContext
+09:02:42.299 INFO  [main][ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] Root WebApplicationContext: initialization completed in 6663 ms
+09:02:42.872 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:110)] HikariPool-1 - Starting...
+09:02:43.793 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:123)] HikariPool-1 - Start completed.
+09:02:44.452 INFO  [main][LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] HHH000204: Processing PersistenceUnitInfo [name: default]
+09:02:44.670 INFO  [main][Version.logVersion(Version.java:44)] HHH000412: Hibernate ORM core version 5.6.15.Final
+09:02:45.179 INFO  [main][Version.<clinit>(JavaReflectionManager.java:56)] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:02:45.588 INFO  [main][Dialect.<init>(Dialect.java:175)] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+09:02:47.260 INFO  [main][JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:02:47.290 INFO  [main][LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:02:48.876 WARN  [main][JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:02:50.885 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Starting ProtocolHandler ["http-nio-8080"]
+09:02:50.958 INFO  [main][TomcatWebServer.start(TomcatWebServer.java:220)] Tomcat started on port(s): 8080 (http) with context path ''
+09:02:50.978 INFO  [main][CourseSelectionApplication.logStarted(StartupInfoLogger.java:61)] Started CourseSelectionApplication in 17.426 seconds (JVM running for 19.296)
+09:02:58.373 INFO  [http-nio-8080-exec-4][[/].log(DirectJDKLog.java:173)] Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:02:58.375 INFO  [http-nio-8080-exec-4][DispatcherServlet.initServletBean(FrameworkServlet.java:525)] Initializing Servlet 'dispatcherServlet'
+09:02:58.569 INFO  [http-nio-8080-exec-4][DispatcherServlet.initServletBean(FrameworkServlet.java:547)] Completed initialization in 191 ms
+09:02:59.509 INFO  [http-nio-8080-exec-3][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+09:02:59.762 WARN  [http-nio-8080-exec-3][SessionIdGeneratorBase.log(DirectJDKLog.java:173)] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [243] milliseconds.
+09:03:21.011 INFO  [http-nio-8080-exec-8][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+09:06:55.122 INFO  [http-nio-8080-exec-10][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+09:07:06.926 INFO  [http-nio-8080-exec-2][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+09:08:16.660 INFO  [http-nio-8080-exec-6][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+09:11:07.441 INFO  [http-nio-8080-exec-9][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+09:17:14.435 INFO  [main][CourseSelectionApplication.logStarting(StartupInfoLogger.java:55)] Starting CourseSelectionApplication using Java 17.0.2 on DESKTOP-RMCKRPA with PID 10932 (C:\Users\HIBIKI\git\courseSelection\bin\main started by HIBIKI in C:\Users\HIBIKI\git\courseSelection)
+09:17:14.444 INFO  [main][CourseSelectionApplication.logStartupProfileInfo(SpringApplication.java:631)] No active profile set, falling back to 1 default profile: "default"
+09:17:16.759 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:17:16.964 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] Finished Spring Data repository scanning in 178 ms. Found 5 JPA repository interfaces.
+09:17:18.945 INFO  [main][TomcatWebServer.initialize(TomcatWebServer.java:108)] Tomcat initialized with port(s): 8080 (http)
+09:17:18.961 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Initializing ProtocolHandler ["http-nio-8080"]
+09:17:18.965 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Starting service [Tomcat]
+09:17:18.966 INFO  [main][StandardEngine.log(DirectJDKLog.java:173)] Starting Servlet engine: [Apache Tomcat/9.0.80]
+09:17:19.327 INFO  [main][[/].log(DirectJDKLog.java:173)] Initializing Spring embedded WebApplicationContext
+09:17:19.328 INFO  [main][ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] Root WebApplicationContext: initialization completed in 4659 ms
+09:17:19.847 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:110)] HikariPool-1 - Starting...
+09:17:20.358 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:123)] HikariPool-1 - Start completed.
+09:17:20.723 INFO  [main][LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] HHH000204: Processing PersistenceUnitInfo [name: default]
+09:17:20.858 INFO  [main][Version.logVersion(Version.java:44)] HHH000412: Hibernate ORM core version 5.6.15.Final
+09:17:21.381 INFO  [main][Version.<clinit>(JavaReflectionManager.java:56)] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:17:21.688 INFO  [main][Dialect.<init>(Dialect.java:175)] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+09:17:22.870 INFO  [main][JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:17:22.896 INFO  [main][LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:17:24.147 WARN  [main][JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:17:25.274 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Starting ProtocolHandler ["http-nio-8080"]
+09:17:25.322 INFO  [main][TomcatWebServer.start(TomcatWebServer.java:220)] Tomcat started on port(s): 8080 (http) with context path ''
+09:17:25.339 INFO  [main][CourseSelectionApplication.logStarted(StartupInfoLogger.java:61)] Started CourseSelectionApplication in 11.643 seconds (JVM running for 13.011)
+09:17:36.129 INFO  [http-nio-8080-exec-1][[/].log(DirectJDKLog.java:173)] Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:17:36.130 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:525)] Initializing Servlet 'dispatcherServlet'
+09:17:36.132 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:547)] Completed initialization in 1 ms
+09:17:36.232 INFO  [http-nio-8080-exec-1][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+09:17:36.426 WARN  [http-nio-8080-exec-1][SessionIdGeneratorBase.log(DirectJDKLog.java:173)] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [185] milliseconds.
+09:18:58.898 INFO  [main][CourseSelectionApplication.logStarting(StartupInfoLogger.java:55)] Starting CourseSelectionApplication using Java 17.0.2 on DESKTOP-RMCKRPA with PID 12128 (C:\Users\HIBIKI\git\courseSelection\bin\main started by HIBIKI in C:\Users\HIBIKI\git\courseSelection)
+09:18:58.917 INFO  [main][CourseSelectionApplication.logStartupProfileInfo(SpringApplication.java:631)] No active profile set, falling back to 1 default profile: "default"
+09:19:00.593 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:19:00.793 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] Finished Spring Data repository scanning in 175 ms. Found 5 JPA repository interfaces.
+09:19:03.464 INFO  [main][TomcatWebServer.initialize(TomcatWebServer.java:108)] Tomcat initialized with port(s): 8080 (http)
+09:19:03.490 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Initializing ProtocolHandler ["http-nio-8080"]
+09:19:03.494 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Starting service [Tomcat]
+09:19:03.495 INFO  [main][StandardEngine.log(DirectJDKLog.java:173)] Starting Servlet engine: [Apache Tomcat/9.0.80]
+09:19:03.974 INFO  [main][[/].log(DirectJDKLog.java:173)] Initializing Spring embedded WebApplicationContext
+09:19:03.975 INFO  [main][ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] Root WebApplicationContext: initialization completed in 4885 ms
+09:19:04.524 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:110)] HikariPool-1 - Starting...
+09:19:05.027 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:123)] HikariPool-1 - Start completed.
+09:19:05.634 INFO  [main][LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] HHH000204: Processing PersistenceUnitInfo [name: default]
+09:19:05.838 INFO  [main][Version.logVersion(Version.java:44)] HHH000412: Hibernate ORM core version 5.6.15.Final
+09:19:06.381 INFO  [main][Version.<clinit>(JavaReflectionManager.java:56)] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:19:06.856 INFO  [main][Dialect.<init>(Dialect.java:175)] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+09:19:08.467 INFO  [main][JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:19:08.495 INFO  [main][LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:19:10.207 WARN  [main][JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:19:11.846 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Starting ProtocolHandler ["http-nio-8080"]
+09:19:11.909 INFO  [main][TomcatWebServer.start(TomcatWebServer.java:220)] Tomcat started on port(s): 8080 (http) with context path ''
+09:19:11.930 INFO  [main][CourseSelectionApplication.logStarted(StartupInfoLogger.java:61)] Started CourseSelectionApplication in 13.793 seconds (JVM running for 15.035)
+09:19:21.077 INFO  [http-nio-8080-exec-1][[/].log(DirectJDKLog.java:173)] Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:19:21.078 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:525)] Initializing Servlet 'dispatcherServlet'
+09:19:21.082 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:547)] Completed initialization in 3 ms
+09:19:21.158 INFO  [http-nio-8080-exec-1][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+09:19:21.340 WARN  [http-nio-8080-exec-1][SessionIdGeneratorBase.log(DirectJDKLog.java:173)] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [176] milliseconds.
+09:21:59.909 INFO  [http-nio-8080-exec-7][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+09:23:09.020 INFO  [main][CourseSelectionApplication.logStarting(StartupInfoLogger.java:55)] Starting CourseSelectionApplication using Java 17.0.2 on DESKTOP-RMCKRPA with PID 6984 (C:\Users\HIBIKI\git\courseSelection\bin\main started by HIBIKI in C:\Users\HIBIKI\git\courseSelection)
+09:23:09.031 INFO  [main][CourseSelectionApplication.logStartupProfileInfo(SpringApplication.java:631)] No active profile set, falling back to 1 default profile: "default"
+09:23:10.567 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:23:10.786 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] Finished Spring Data repository scanning in 178 ms. Found 5 JPA repository interfaces.
+09:23:13.284 INFO  [main][TomcatWebServer.initialize(TomcatWebServer.java:108)] Tomcat initialized with port(s): 8080 (http)
+09:23:13.309 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Initializing ProtocolHandler ["http-nio-8080"]
+09:23:13.316 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Starting service [Tomcat]
+09:23:13.316 INFO  [main][StandardEngine.log(DirectJDKLog.java:173)] Starting Servlet engine: [Apache Tomcat/9.0.80]
+09:23:13.749 INFO  [main][[/].log(DirectJDKLog.java:173)] Initializing Spring embedded WebApplicationContext
+09:23:13.751 INFO  [main][ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] Root WebApplicationContext: initialization completed in 4573 ms
+09:23:14.280 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:110)] HikariPool-1 - Starting...
+09:23:14.847 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:123)] HikariPool-1 - Start completed.
+09:23:15.363 INFO  [main][LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] HHH000204: Processing PersistenceUnitInfo [name: default]
+09:23:15.506 INFO  [main][Version.logVersion(Version.java:44)] HHH000412: Hibernate ORM core version 5.6.15.Final
+09:23:15.941 INFO  [main][Version.<clinit>(JavaReflectionManager.java:56)] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:23:16.220 INFO  [main][Dialect.<init>(Dialect.java:175)] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+09:23:17.520 INFO  [main][JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:23:17.537 INFO  [main][LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:23:19.252 WARN  [main][JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:23:20.337 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Starting ProtocolHandler ["http-nio-8080"]
+09:23:20.412 INFO  [main][TomcatWebServer.start(TomcatWebServer.java:220)] Tomcat started on port(s): 8080 (http) with context path ''
+09:23:20.476 INFO  [main][CourseSelectionApplication.logStarted(StartupInfoLogger.java:61)] Started CourseSelectionApplication in 12.217 seconds (JVM running for 13.564)
+09:23:31.504 INFO  [http-nio-8080-exec-1][[/].log(DirectJDKLog.java:173)] Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:23:31.506 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:525)] Initializing Servlet 'dispatcherServlet'
+09:23:31.511 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:547)] Completed initialization in 4 ms
+09:23:31.618 INFO  [http-nio-8080-exec-1][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+09:23:32.105 WARN  [http-nio-8080-exec-1][SessionIdGeneratorBase.log(DirectJDKLog.java:173)] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [421] milliseconds.
+09:23:44.278 INFO  [http-nio-8080-exec-4][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+09:54:39.496 INFO  [main][CourseSelectionApplication.logStarting(StartupInfoLogger.java:55)] Starting CourseSelectionApplication using Java 17.0.2 on DESKTOP-RMCKRPA with PID 3456 (C:\Users\HIBIKI\git\courseSelection\bin\main started by HIBIKI in C:\Users\HIBIKI\git\courseSelection)
+09:54:39.524 INFO  [main][CourseSelectionApplication.logStartupProfileInfo(SpringApplication.java:631)] No active profile set, falling back to 1 default profile: "default"
+09:54:40.911 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:54:41.080 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] Finished Spring Data repository scanning in 144 ms. Found 5 JPA repository interfaces.
+09:54:43.124 INFO  [main][TomcatWebServer.initialize(TomcatWebServer.java:108)] Tomcat initialized with port(s): 8080 (http)
+09:54:43.139 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Initializing ProtocolHandler ["http-nio-8080"]
+09:54:43.142 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Starting service [Tomcat]
+09:54:43.143 INFO  [main][StandardEngine.log(DirectJDKLog.java:173)] Starting Servlet engine: [Apache Tomcat/9.0.80]
+09:54:43.548 INFO  [main][[/].log(DirectJDKLog.java:173)] Initializing Spring embedded WebApplicationContext
+09:54:43.549 INFO  [main][ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] Root WebApplicationContext: initialization completed in 3899 ms
+09:54:44.030 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:110)] HikariPool-1 - Starting...
+09:54:44.597 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:123)] HikariPool-1 - Start completed.
+09:54:45.165 INFO  [main][LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] HHH000204: Processing PersistenceUnitInfo [name: default]
+09:54:45.300 INFO  [main][Version.logVersion(Version.java:44)] HHH000412: Hibernate ORM core version 5.6.15.Final
+09:54:45.743 INFO  [main][Version.<clinit>(JavaReflectionManager.java:56)] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:54:46.146 INFO  [main][Dialect.<init>(Dialect.java:175)] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+09:54:47.271 INFO  [main][JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:54:47.293 INFO  [main][LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:54:48.513 WARN  [main][JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:54:49.783 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Starting ProtocolHandler ["http-nio-8080"]
+09:54:49.836 INFO  [main][TomcatWebServer.start(TomcatWebServer.java:220)] Tomcat started on port(s): 8080 (http) with context path ''
+09:54:49.855 INFO  [main][CourseSelectionApplication.logStarted(StartupInfoLogger.java:61)] Started CourseSelectionApplication in 11.157 seconds (JVM running for 12.586)
+09:55:02.919 INFO  [http-nio-8080-exec-1][[/].log(DirectJDKLog.java:173)] Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:55:02.920 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:525)] Initializing Servlet 'dispatcherServlet'
+09:55:02.923 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:547)] Completed initialization in 2 ms
+09:56:31.221 INFO  [main][CourseSelectionApplication.logStarting(StartupInfoLogger.java:55)] Starting CourseSelectionApplication using Java 17.0.2 on DESKTOP-RMCKRPA with PID 8468 (C:\Users\HIBIKI\git\courseSelection\bin\main started by HIBIKI in C:\Users\HIBIKI\git\courseSelection)
+09:56:31.231 INFO  [main][CourseSelectionApplication.logStartupProfileInfo(SpringApplication.java:631)] No active profile set, falling back to 1 default profile: "default"
+09:56:33.050 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:56:33.238 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] Finished Spring Data repository scanning in 167 ms. Found 5 JPA repository interfaces.
+09:56:35.022 INFO  [main][TomcatWebServer.initialize(TomcatWebServer.java:108)] Tomcat initialized with port(s): 8080 (http)
+09:56:35.038 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Initializing ProtocolHandler ["http-nio-8080"]
+09:56:35.042 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Starting service [Tomcat]
+09:56:35.043 INFO  [main][StandardEngine.log(DirectJDKLog.java:173)] Starting Servlet engine: [Apache Tomcat/9.0.80]
+09:56:35.283 INFO  [main][[/].log(DirectJDKLog.java:173)] Initializing Spring embedded WebApplicationContext
+09:56:35.283 INFO  [main][ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] Root WebApplicationContext: initialization completed in 3881 ms
+09:56:35.546 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:110)] HikariPool-1 - Starting...
+09:56:35.886 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:123)] HikariPool-1 - Start completed.
+09:56:36.277 INFO  [main][LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] HHH000204: Processing PersistenceUnitInfo [name: default]
+09:56:36.395 INFO  [main][Version.logVersion(Version.java:44)] HHH000412: Hibernate ORM core version 5.6.15.Final
+09:56:36.743 INFO  [main][Version.<clinit>(JavaReflectionManager.java:56)] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:56:37.038 INFO  [main][Dialect.<init>(Dialect.java:175)] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+09:56:38.427 INFO  [main][JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:56:38.448 INFO  [main][LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:56:39.723 WARN  [main][JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:56:40.572 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Starting ProtocolHandler ["http-nio-8080"]
+09:56:40.630 INFO  [main][TomcatWebServer.start(TomcatWebServer.java:220)] Tomcat started on port(s): 8080 (http) with context path ''
+09:56:40.647 INFO  [main][CourseSelectionApplication.logStarted(StartupInfoLogger.java:61)] Started CourseSelectionApplication in 10.515 seconds (JVM running for 12.053)
+09:56:44.779 INFO  [http-nio-8080-exec-1][[/].log(DirectJDKLog.java:173)] Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:56:44.780 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:525)] Initializing Servlet 'dispatcherServlet'
+09:56:44.788 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:547)] Completed initialization in 2 ms
+09:58:20.093 INFO  [main][CourseSelectionApplication.logStarting(StartupInfoLogger.java:55)] Starting CourseSelectionApplication using Java 17.0.2 on DESKTOP-RMCKRPA with PID 1604 (C:\Users\HIBIKI\git\courseSelection\bin\main started by HIBIKI in C:\Users\HIBIKI\git\courseSelection)
+09:58:20.102 INFO  [main][CourseSelectionApplication.logStartupProfileInfo(SpringApplication.java:631)] No active profile set, falling back to 1 default profile: "default"
+09:58:21.592 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:58:21.774 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] Finished Spring Data repository scanning in 156 ms. Found 5 JPA repository interfaces.
+09:58:23.691 INFO  [main][TomcatWebServer.initialize(TomcatWebServer.java:108)] Tomcat initialized with port(s): 8080 (http)
+09:58:23.712 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Initializing ProtocolHandler ["http-nio-8080"]
+09:58:23.715 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Starting service [Tomcat]
+09:58:23.716 INFO  [main][StandardEngine.log(DirectJDKLog.java:173)] Starting Servlet engine: [Apache Tomcat/9.0.80]
+09:58:24.077 INFO  [main][[/].log(DirectJDKLog.java:173)] Initializing Spring embedded WebApplicationContext
+09:58:24.079 INFO  [main][ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] Root WebApplicationContext: initialization completed in 3855 ms
+09:58:24.363 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:110)] HikariPool-1 - Starting...
+09:58:24.786 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:123)] HikariPool-1 - Start completed.
+09:58:25.187 INFO  [main][LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] HHH000204: Processing PersistenceUnitInfo [name: default]
+09:58:25.315 INFO  [main][Version.logVersion(Version.java:44)] HHH000412: Hibernate ORM core version 5.6.15.Final
+09:58:25.755 INFO  [main][Version.<clinit>(JavaReflectionManager.java:56)] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:58:26.094 INFO  [main][Dialect.<init>(Dialect.java:175)] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+09:58:27.456 INFO  [main][JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:58:27.486 INFO  [main][LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:58:28.694 WARN  [main][JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:58:29.852 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Starting ProtocolHandler ["http-nio-8080"]
+09:58:29.901 INFO  [main][TomcatWebServer.start(TomcatWebServer.java:220)] Tomcat started on port(s): 8080 (http) with context path ''
+09:58:29.925 INFO  [main][CourseSelectionApplication.logStarted(StartupInfoLogger.java:61)] Started CourseSelectionApplication in 10.56 seconds (JVM running for 12.309)
+09:58:36.266 INFO  [http-nio-8080-exec-1][[/].log(DirectJDKLog.java:173)] Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:58:36.268 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:525)] Initializing Servlet 'dispatcherServlet'
+09:58:36.274 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:547)] Completed initialization in 4 ms
+10:11:32.669 INFO  [main][CourseSelectionApplication.logStarting(StartupInfoLogger.java:55)] Starting CourseSelectionApplication using Java 17.0.2 on DESKTOP-RMCKRPA with PID 12268 (C:\Users\HIBIKI\git\courseSelection\bin\main started by HIBIKI in C:\Users\HIBIKI\git\courseSelection)
+10:11:32.677 INFO  [main][CourseSelectionApplication.logStartupProfileInfo(SpringApplication.java:631)] No active profile set, falling back to 1 default profile: "default"
+10:11:34.511 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:11:34.696 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] Finished Spring Data repository scanning in 161 ms. Found 5 JPA repository interfaces.
+10:11:36.756 INFO  [main][TomcatWebServer.initialize(TomcatWebServer.java:108)] Tomcat initialized with port(s): 8080 (http)
+10:11:36.777 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Initializing ProtocolHandler ["http-nio-8080"]
+10:11:36.782 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Starting service [Tomcat]
+10:11:36.782 INFO  [main][StandardEngine.log(DirectJDKLog.java:173)] Starting Servlet engine: [Apache Tomcat/9.0.80]
+10:11:37.130 INFO  [main][[/].log(DirectJDKLog.java:173)] Initializing Spring embedded WebApplicationContext
+10:11:37.131 INFO  [main][ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] Root WebApplicationContext: initialization completed in 4251 ms
+10:11:37.886 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:110)] HikariPool-1 - Starting...
+10:11:38.398 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:123)] HikariPool-1 - Start completed.
+10:11:38.969 INFO  [main][LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] HHH000204: Processing PersistenceUnitInfo [name: default]
+10:11:39.148 INFO  [main][Version.logVersion(Version.java:44)] HHH000412: Hibernate ORM core version 5.6.15.Final
+10:11:39.596 INFO  [main][Version.<clinit>(JavaReflectionManager.java:56)] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:11:40.033 INFO  [main][Dialect.<init>(Dialect.java:175)] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+10:11:41.494 INFO  [main][JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:11:41.513 INFO  [main][LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:11:43.507 WARN  [main][JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:11:45.057 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Starting ProtocolHandler ["http-nio-8080"]
+10:11:45.132 INFO  [main][TomcatWebServer.start(TomcatWebServer.java:220)] Tomcat started on port(s): 8080 (http) with context path ''
+10:11:45.155 INFO  [main][CourseSelectionApplication.logStarted(StartupInfoLogger.java:61)] Started CourseSelectionApplication in 13.273 seconds (JVM running for 14.655)
+10:11:50.864 INFO  [http-nio-8080-exec-1][[/].log(DirectJDKLog.java:173)] Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:11:50.867 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:525)] Initializing Servlet 'dispatcherServlet'
+10:11:50.875 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:547)] Completed initialization in 6 ms
+10:11:51.135 INFO  [http-nio-8080-exec-2][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+10:11:51.471 WARN  [http-nio-8080-exec-2][SessionIdGeneratorBase.log(DirectJDKLog.java:173)] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [322] milliseconds.
+10:12:03.163 INFO  [http-nio-8080-exec-9][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:12:11.157 INFO  [http-nio-8080-exec-1][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:12:23.648 INFO  [http-nio-8080-exec-3][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:12:23.659 ERROR [http-nio-8080-exec-3][[dispatcherServlet].log(DirectJDKLog.java:175)] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl.ChangePassword(EmployeeServiceImpl.java:161)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$2f82e973.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$fcf7b8b7.ChangePassword(<generated>)
+	at com.javaProject.courseSelection.controller.EmployeeController.ChangePassword(EmployeeController.java:66)
+	at com.javaProject.courseSelection.controller.EmployeeController$$FastClassBySpringCGLIB$$ba8981db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.javaProject.courseSelection.aspect.LoginAspect.around(LoginAspect.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.javaProject.courseSelection.controller.EmployeeController$$EnhancerBySpringCGLIB$$89d03abc.ChangePassword(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+10:12:35.055 INFO  [http-nio-8080-exec-4][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:12:35.056 ERROR [http-nio-8080-exec-4][[dispatcherServlet].log(DirectJDKLog.java:175)] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl.ChangePassword(EmployeeServiceImpl.java:161)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$2f82e973.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$fcf7b8b7.ChangePassword(<generated>)
+	at com.javaProject.courseSelection.controller.EmployeeController.ChangePassword(EmployeeController.java:66)
+	at com.javaProject.courseSelection.controller.EmployeeController$$FastClassBySpringCGLIB$$ba8981db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.javaProject.courseSelection.aspect.LoginAspect.around(LoginAspect.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.javaProject.courseSelection.controller.EmployeeController$$EnhancerBySpringCGLIB$$89d03abc.ChangePassword(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+10:12:36.266 INFO  [http-nio-8080-exec-5][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:12:36.268 ERROR [http-nio-8080-exec-5][[dispatcherServlet].log(DirectJDKLog.java:175)] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl.ChangePassword(EmployeeServiceImpl.java:161)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$2f82e973.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$fcf7b8b7.ChangePassword(<generated>)
+	at com.javaProject.courseSelection.controller.EmployeeController.ChangePassword(EmployeeController.java:66)
+	at com.javaProject.courseSelection.controller.EmployeeController$$FastClassBySpringCGLIB$$ba8981db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.javaProject.courseSelection.aspect.LoginAspect.around(LoginAspect.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.javaProject.courseSelection.controller.EmployeeController$$EnhancerBySpringCGLIB$$89d03abc.ChangePassword(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+10:12:49.946 INFO  [http-nio-8080-exec-6][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:13:02.358 INFO  [http-nio-8080-exec-9][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:13:02.360 ERROR [http-nio-8080-exec-9][[dispatcherServlet].log(DirectJDKLog.java:175)] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl.ChangePassword(EmployeeServiceImpl.java:161)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$2f82e973.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$fcf7b8b7.ChangePassword(<generated>)
+	at com.javaProject.courseSelection.controller.EmployeeController.ChangePassword(EmployeeController.java:66)
+	at com.javaProject.courseSelection.controller.EmployeeController$$FastClassBySpringCGLIB$$ba8981db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.javaProject.courseSelection.aspect.LoginAspect.around(LoginAspect.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.javaProject.courseSelection.controller.EmployeeController$$EnhancerBySpringCGLIB$$89d03abc.ChangePassword(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+10:13:10.344 INFO  [http-nio-8080-exec-10][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:13:10.346 ERROR [http-nio-8080-exec-10][[dispatcherServlet].log(DirectJDKLog.java:175)] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl.ChangePassword(EmployeeServiceImpl.java:161)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$2f82e973.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$fcf7b8b7.ChangePassword(<generated>)
+	at com.javaProject.courseSelection.controller.EmployeeController.ChangePassword(EmployeeController.java:66)
+	at com.javaProject.courseSelection.controller.EmployeeController$$FastClassBySpringCGLIB$$ba8981db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.javaProject.courseSelection.aspect.LoginAspect.around(LoginAspect.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.javaProject.courseSelection.controller.EmployeeController$$EnhancerBySpringCGLIB$$89d03abc.ChangePassword(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+10:13:15.577 INFO  [http-nio-8080-exec-8][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:13:15.579 ERROR [http-nio-8080-exec-8][[dispatcherServlet].log(DirectJDKLog.java:175)] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl.ChangePassword(EmployeeServiceImpl.java:161)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$2f82e973.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$fcf7b8b7.ChangePassword(<generated>)
+	at com.javaProject.courseSelection.controller.EmployeeController.ChangePassword(EmployeeController.java:66)
+	at com.javaProject.courseSelection.controller.EmployeeController$$FastClassBySpringCGLIB$$ba8981db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.javaProject.courseSelection.aspect.LoginAspect.around(LoginAspect.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.javaProject.courseSelection.controller.EmployeeController$$EnhancerBySpringCGLIB$$89d03abc.ChangePassword(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+10:13:22.425 INFO  [http-nio-8080-exec-1][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:13:22.427 ERROR [http-nio-8080-exec-1][[dispatcherServlet].log(DirectJDKLog.java:175)] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl.ChangePassword(EmployeeServiceImpl.java:161)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$2f82e973.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$fcf7b8b7.ChangePassword(<generated>)
+	at com.javaProject.courseSelection.controller.EmployeeController.ChangePassword(EmployeeController.java:66)
+	at com.javaProject.courseSelection.controller.EmployeeController$$FastClassBySpringCGLIB$$ba8981db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.javaProject.courseSelection.aspect.LoginAspect.around(LoginAspect.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.javaProject.courseSelection.controller.EmployeeController$$EnhancerBySpringCGLIB$$89d03abc.ChangePassword(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+10:13:24.334 INFO  [http-nio-8080-exec-2][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:13:24.335 ERROR [http-nio-8080-exec-2][[dispatcherServlet].log(DirectJDKLog.java:175)] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl.ChangePassword(EmployeeServiceImpl.java:161)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$2f82e973.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$fcf7b8b7.ChangePassword(<generated>)
+	at com.javaProject.courseSelection.controller.EmployeeController.ChangePassword(EmployeeController.java:66)
+	at com.javaProject.courseSelection.controller.EmployeeController$$FastClassBySpringCGLIB$$ba8981db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.javaProject.courseSelection.aspect.LoginAspect.around(LoginAspect.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.javaProject.courseSelection.controller.EmployeeController$$EnhancerBySpringCGLIB$$89d03abc.ChangePassword(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+10:13:27.291 INFO  [http-nio-8080-exec-3][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:13:27.293 ERROR [http-nio-8080-exec-3][[dispatcherServlet].log(DirectJDKLog.java:175)] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl.ChangePassword(EmployeeServiceImpl.java:161)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$2f82e973.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$fcf7b8b7.ChangePassword(<generated>)
+	at com.javaProject.courseSelection.controller.EmployeeController.ChangePassword(EmployeeController.java:66)
+	at com.javaProject.courseSelection.controller.EmployeeController$$FastClassBySpringCGLIB$$ba8981db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.javaProject.courseSelection.aspect.LoginAspect.around(LoginAspect.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.javaProject.courseSelection.controller.EmployeeController$$EnhancerBySpringCGLIB$$89d03abc.ChangePassword(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+10:13:32.642 INFO  [http-nio-8080-exec-4][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:24:49.128 INFO  [http-nio-8080-exec-6][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:24:53.223 INFO  [http-nio-8080-exec-9][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+10:25:26.681 INFO  [http-nio-8080-exec-2][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:25:32.723 INFO  [http-nio-8080-exec-4][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:25:44.194 INFO  [http-nio-8080-exec-6][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:25:44.196 ERROR [http-nio-8080-exec-6][[dispatcherServlet].log(DirectJDKLog.java:175)] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "newPassword" is null
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl.ChangePassword(EmployeeServiceImpl.java:161)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$2f82e973.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.javaProject.courseSelection.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$fcf7b8b7.ChangePassword(<generated>)
+	at com.javaProject.courseSelection.controller.EmployeeController.ChangePassword(EmployeeController.java:66)
+	at com.javaProject.courseSelection.controller.EmployeeController$$FastClassBySpringCGLIB$$ba8981db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.javaProject.courseSelection.aspect.LoginAspect.around(LoginAspect.java:49)
+	at jdk.internal.reflect.GeneratedMethodAccessor23.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.javaProject.courseSelection.controller.EmployeeController$$EnhancerBySpringCGLIB$$89d03abc.ChangePassword(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+10:33:40.561 INFO  [main][CourseSelectionApplication.logStarting(StartupInfoLogger.java:55)] Starting CourseSelectionApplication using Java 17.0.2 on DESKTOP-RMCKRPA with PID 7536 (C:\Users\HIBIKI\git\courseSelection\bin\main started by HIBIKI in C:\Users\HIBIKI\git\courseSelection)
+10:33:40.585 INFO  [main][CourseSelectionApplication.logStartupProfileInfo(SpringApplication.java:631)] No active profile set, falling back to 1 default profile: "default"
+10:33:42.338 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:33:42.627 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] Finished Spring Data repository scanning in 256 ms. Found 5 JPA repository interfaces.
+10:33:44.822 INFO  [main][TomcatWebServer.initialize(TomcatWebServer.java:108)] Tomcat initialized with port(s): 8080 (http)
+10:33:44.844 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Initializing ProtocolHandler ["http-nio-8080"]
+10:33:44.848 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Starting service [Tomcat]
+10:33:44.848 INFO  [main][StandardEngine.log(DirectJDKLog.java:173)] Starting Servlet engine: [Apache Tomcat/9.0.80]
+10:33:45.221 INFO  [main][[/].log(DirectJDKLog.java:173)] Initializing Spring embedded WebApplicationContext
+10:33:45.241 INFO  [main][ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] Root WebApplicationContext: initialization completed in 4466 ms
+10:33:45.819 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:110)] HikariPool-1 - Starting...
+10:33:46.221 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:123)] HikariPool-1 - Start completed.
+10:33:46.884 INFO  [main][LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] HHH000204: Processing PersistenceUnitInfo [name: default]
+10:33:47.097 INFO  [main][Version.logVersion(Version.java:44)] HHH000412: Hibernate ORM core version 5.6.15.Final
+10:33:47.682 INFO  [main][Version.<clinit>(JavaReflectionManager.java:56)] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:33:48.124 INFO  [main][Dialect.<init>(Dialect.java:175)] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+10:33:49.593 INFO  [main][JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:33:49.615 INFO  [main][LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:33:51.280 WARN  [main][JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:33:52.749 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Starting ProtocolHandler ["http-nio-8080"]
+10:33:52.814 INFO  [main][TomcatWebServer.start(TomcatWebServer.java:220)] Tomcat started on port(s): 8080 (http) with context path ''
+10:33:52.834 INFO  [main][CourseSelectionApplication.logStarted(StartupInfoLogger.java:61)] Started CourseSelectionApplication in 13.067 seconds (JVM running for 14.263)
+10:33:56.716 INFO  [http-nio-8080-exec-2][[/].log(DirectJDKLog.java:173)] Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:33:56.717 INFO  [http-nio-8080-exec-2][DispatcherServlet.initServletBean(FrameworkServlet.java:525)] Initializing Servlet 'dispatcherServlet'
+10:33:56.719 INFO  [http-nio-8080-exec-2][DispatcherServlet.initServletBean(FrameworkServlet.java:547)] Completed initialization in 2 ms
+10:33:57.096 INFO  [http-nio-8080-exec-2][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:33:57.316 WARN  [http-nio-8080-exec-2][SessionIdGeneratorBase.log(DirectJDKLog.java:173)] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [206] milliseconds.
+10:34:00.648 INFO  [http-nio-8080-exec-3][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+10:34:10.230 INFO  [http-nio-8080-exec-6][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:34:17.210 INFO  [http-nio-8080-exec-9][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:34:22.177 INFO  [http-nio-8080-exec-10][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:34:28.899 INFO  [http-nio-8080-exec-1][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:35:25.425 INFO  [main][CourseSelectionApplication.logStarting(StartupInfoLogger.java:55)] Starting CourseSelectionApplication using Java 17.0.2 on DESKTOP-RMCKRPA with PID 3324 (C:\Users\HIBIKI\git\courseSelection\bin\main started by HIBIKI in C:\Users\HIBIKI\git\courseSelection)
+10:35:25.437 INFO  [main][CourseSelectionApplication.logStartupProfileInfo(SpringApplication.java:631)] No active profile set, falling back to 1 default profile: "default"
+10:35:26.928 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:35:27.139 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] Finished Spring Data repository scanning in 193 ms. Found 5 JPA repository interfaces.
+10:35:29.347 INFO  [main][TomcatWebServer.initialize(TomcatWebServer.java:108)] Tomcat initialized with port(s): 8080 (http)
+10:35:29.369 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Initializing ProtocolHandler ["http-nio-8080"]
+10:35:29.373 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Starting service [Tomcat]
+10:35:29.373 INFO  [main][StandardEngine.log(DirectJDKLog.java:173)] Starting Servlet engine: [Apache Tomcat/9.0.80]
+10:35:29.749 INFO  [main][[/].log(DirectJDKLog.java:173)] Initializing Spring embedded WebApplicationContext
+10:35:29.750 INFO  [main][ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] Root WebApplicationContext: initialization completed in 4202 ms
+10:35:30.239 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:110)] HikariPool-1 - Starting...
+10:35:30.581 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:123)] HikariPool-1 - Start completed.
+10:35:30.971 INFO  [main][LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] HHH000204: Processing PersistenceUnitInfo [name: default]
+10:35:31.272 INFO  [main][Version.logVersion(Version.java:44)] HHH000412: Hibernate ORM core version 5.6.15.Final
+10:35:31.977 INFO  [main][Version.<clinit>(JavaReflectionManager.java:56)] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:35:32.384 INFO  [main][Dialect.<init>(Dialect.java:175)] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+10:35:34.780 INFO  [main][JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:35:34.817 INFO  [main][LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:35:36.797 WARN  [main][JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:35:38.067 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Starting ProtocolHandler ["http-nio-8080"]
+10:35:38.116 INFO  [main][TomcatWebServer.start(TomcatWebServer.java:220)] Tomcat started on port(s): 8080 (http) with context path ''
+10:35:38.141 INFO  [main][CourseSelectionApplication.logStarted(StartupInfoLogger.java:61)] Started CourseSelectionApplication in 13.46 seconds (JVM running for 14.892)
+10:35:44.023 INFO  [http-nio-8080-exec-1][[/].log(DirectJDKLog.java:173)] Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:35:44.024 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:525)] Initializing Servlet 'dispatcherServlet'
+10:35:44.028 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:547)] Completed initialization in 4 ms
+10:35:44.357 INFO  [http-nio-8080-exec-1][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:35:44.579 WARN  [http-nio-8080-exec-1][SessionIdGeneratorBase.log(DirectJDKLog.java:173)] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [211] milliseconds.
+10:35:47.437 INFO  [http-nio-8080-exec-3][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+10:35:59.608 INFO  [http-nio-8080-exec-4][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:36:05.674 INFO  [http-nio-8080-exec-7][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:36:11.515 INFO  [http-nio-8080-exec-9][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:36:34.882 INFO  [http-nio-8080-exec-10][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:37:37.811 INFO  [main][CourseSelectionApplication.logStarting(StartupInfoLogger.java:55)] Starting CourseSelectionApplication using Java 17.0.2 on DESKTOP-RMCKRPA with PID 7196 (C:\Users\HIBIKI\git\courseSelection\bin\main started by HIBIKI in C:\Users\HIBIKI\git\courseSelection)
+10:37:37.834 INFO  [main][CourseSelectionApplication.logStartupProfileInfo(SpringApplication.java:631)] No active profile set, falling back to 1 default profile: "default"
+10:37:39.945 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:37:40.240 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] Finished Spring Data repository scanning in 270 ms. Found 5 JPA repository interfaces.
+10:37:42.519 INFO  [main][TomcatWebServer.initialize(TomcatWebServer.java:108)] Tomcat initialized with port(s): 8080 (http)
+10:37:42.539 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Initializing ProtocolHandler ["http-nio-8080"]
+10:37:42.543 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Starting service [Tomcat]
+10:37:42.543 INFO  [main][StandardEngine.log(DirectJDKLog.java:173)] Starting Servlet engine: [Apache Tomcat/9.0.80]
+10:37:42.911 INFO  [main][[/].log(DirectJDKLog.java:173)] Initializing Spring embedded WebApplicationContext
+10:37:42.912 INFO  [main][ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] Root WebApplicationContext: initialization completed in 4850 ms
+10:37:43.510 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:110)] HikariPool-1 - Starting...
+10:37:43.988 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:123)] HikariPool-1 - Start completed.
+10:37:44.682 INFO  [main][LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] HHH000204: Processing PersistenceUnitInfo [name: default]
+10:37:44.885 INFO  [main][Version.logVersion(Version.java:44)] HHH000412: Hibernate ORM core version 5.6.15.Final
+10:37:45.382 INFO  [main][Version.<clinit>(JavaReflectionManager.java:56)] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:37:45.886 INFO  [main][Dialect.<init>(Dialect.java:175)] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+10:37:47.891 INFO  [main][JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:37:47.919 INFO  [main][LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:37:49.941 WARN  [main][JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:37:51.444 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Starting ProtocolHandler ["http-nio-8080"]
+10:37:51.509 INFO  [main][TomcatWebServer.start(TomcatWebServer.java:220)] Tomcat started on port(s): 8080 (http) with context path ''
+10:37:51.538 INFO  [main][CourseSelectionApplication.logStarted(StartupInfoLogger.java:61)] Started CourseSelectionApplication in 14.799 seconds (JVM running for 17.208)
+10:37:56.177 INFO  [http-nio-8080-exec-2][[/].log(DirectJDKLog.java:173)] Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:37:56.178 INFO  [http-nio-8080-exec-2][DispatcherServlet.initServletBean(FrameworkServlet.java:525)] Initializing Servlet 'dispatcherServlet'
+10:37:56.181 INFO  [http-nio-8080-exec-2][DispatcherServlet.initServletBean(FrameworkServlet.java:547)] Completed initialization in 2 ms
+10:37:56.277 INFO  [http-nio-8080-exec-2][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+10:37:56.567 WARN  [http-nio-8080-exec-2][SessionIdGeneratorBase.log(DirectJDKLog.java:173)] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [279] milliseconds.
+10:38:31.588 INFO  [http-nio-8080-exec-6][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:38:37.001 INFO  [http-nio-8080-exec-1][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:39:15.172 INFO  [http-nio-8080-exec-8][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:41:39.284 INFO  [http-nio-8080-exec-10][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:41:41.888 INFO  [http-nio-8080-exec-9][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+10:41:53.184 INFO  [http-nio-8080-exec-5][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:43:29.454 INFO  [http-nio-8080-exec-1][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:43:37.787 INFO  [http-nio-8080-exec-10][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+10:43:47.718 INFO  [http-nio-8080-exec-6][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:46:02.674 INFO  [http-nio-8080-exec-4][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:46:04.908 INFO  [http-nio-8080-exec-10][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+10:46:15.203 INFO  [http-nio-8080-exec-3][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:47:52.807 INFO  [http-nio-8080-exec-6][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+10:48:02.187 INFO  [http-nio-8080-exec-4][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:48:13.002 INFO  [http-nio-8080-exec-9][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:48:15.922 INFO  [http-nio-8080-exec-2][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:49:00.668 INFO  [http-nio-8080-exec-5][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:49:12.579 INFO  [http-nio-8080-exec-7][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:49:51.048 INFO  [http-nio-8080-exec-4][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:51:56.888 INFO  [main][CourseSelectionApplication.logStarting(StartupInfoLogger.java:55)] Starting CourseSelectionApplication using Java 17.0.2 on DESKTOP-RMCKRPA with PID 11952 (C:\Users\HIBIKI\git\courseSelection\bin\main started by HIBIKI in C:\Users\HIBIKI\git\courseSelection)
+10:51:56.901 INFO  [main][CourseSelectionApplication.logStartupProfileInfo(SpringApplication.java:631)] No active profile set, falling back to 1 default profile: "default"
+10:51:58.493 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:51:58.667 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] Finished Spring Data repository scanning in 151 ms. Found 5 JPA repository interfaces.
+10:52:00.808 INFO  [main][TomcatWebServer.initialize(TomcatWebServer.java:108)] Tomcat initialized with port(s): 8080 (http)
+10:52:00.825 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Initializing ProtocolHandler ["http-nio-8080"]
+10:52:00.829 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Starting service [Tomcat]
+10:52:00.830 INFO  [main][StandardEngine.log(DirectJDKLog.java:173)] Starting Servlet engine: [Apache Tomcat/9.0.80]
+10:52:01.191 INFO  [main][[/].log(DirectJDKLog.java:173)] Initializing Spring embedded WebApplicationContext
+10:52:01.192 INFO  [main][ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] Root WebApplicationContext: initialization completed in 4160 ms
+10:52:01.595 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:110)] HikariPool-1 - Starting...
+10:52:01.923 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:123)] HikariPool-1 - Start completed.
+10:52:02.440 INFO  [main][LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] HHH000204: Processing PersistenceUnitInfo [name: default]
+10:52:02.621 INFO  [main][Version.logVersion(Version.java:44)] HHH000412: Hibernate ORM core version 5.6.15.Final
+10:52:02.996 INFO  [main][Version.<clinit>(JavaReflectionManager.java:56)] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:52:03.259 INFO  [main][Dialect.<init>(Dialect.java:175)] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+10:52:04.929 INFO  [main][JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:52:04.951 INFO  [main][LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:52:06.203 WARN  [main][JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:52:07.165 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Starting ProtocolHandler ["http-nio-8080"]
+10:52:07.218 INFO  [main][TomcatWebServer.start(TomcatWebServer.java:220)] Tomcat started on port(s): 8080 (http) with context path ''
+10:52:07.235 INFO  [main][CourseSelectionApplication.logStarted(StartupInfoLogger.java:61)] Started CourseSelectionApplication in 11.033 seconds (JVM running for 13.213)
+10:52:13.299 INFO  [http-nio-8080-exec-1][[/].log(DirectJDKLog.java:173)] Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:52:13.301 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:525)] Initializing Servlet 'dispatcherServlet'
+10:52:13.306 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:547)] Completed initialization in 4 ms
+10:52:13.619 INFO  [http-nio-8080-exec-1][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:52:13.843 WARN  [http-nio-8080-exec-1][SessionIdGeneratorBase.log(DirectJDKLog.java:173)] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [215] milliseconds.
+10:52:16.539 INFO  [http-nio-8080-exec-3][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+10:52:30.891 INFO  [http-nio-8080-exec-7][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:52:37.736 INFO  [http-nio-8080-exec-9][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:52:43.810 INFO  [http-nio-8080-exec-1][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:52:49.784 INFO  [http-nio-8080-exec-3][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:52:57.455 INFO  [http-nio-8080-exec-6][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:57:00.626 INFO  [http-nio-8080-exec-7][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+10:57:16.314 INFO  [main][CourseSelectionApplication.logStarting(StartupInfoLogger.java:55)] Starting CourseSelectionApplication using Java 17.0.2 on DESKTOP-RMCKRPA with PID 244 (C:\Users\HIBIKI\git\courseSelection\bin\main started by HIBIKI in C:\Users\HIBIKI\git\courseSelection)
+10:57:16.337 INFO  [main][CourseSelectionApplication.logStartupProfileInfo(SpringApplication.java:631)] No active profile set, falling back to 1 default profile: "default"
+10:57:17.970 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:57:18.202 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] Finished Spring Data repository scanning in 204 ms. Found 5 JPA repository interfaces.
+10:57:20.455 INFO  [main][TomcatWebServer.initialize(TomcatWebServer.java:108)] Tomcat initialized with port(s): 8080 (http)
+10:57:20.475 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Initializing ProtocolHandler ["http-nio-8080"]
+10:57:20.479 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Starting service [Tomcat]
+10:57:20.479 INFO  [main][StandardEngine.log(DirectJDKLog.java:173)] Starting Servlet engine: [Apache Tomcat/9.0.80]
+10:57:20.853 INFO  [main][[/].log(DirectJDKLog.java:173)] Initializing Spring embedded WebApplicationContext
+10:57:20.854 INFO  [main][ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] Root WebApplicationContext: initialization completed in 4363 ms
+10:57:21.394 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:110)] HikariPool-1 - Starting...
+10:57:22.170 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:123)] HikariPool-1 - Start completed.
+10:57:22.623 INFO  [main][LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] HHH000204: Processing PersistenceUnitInfo [name: default]
+10:57:22.776 INFO  [main][Version.logVersion(Version.java:44)] HHH000412: Hibernate ORM core version 5.6.15.Final
+10:57:23.530 INFO  [main][Version.<clinit>(JavaReflectionManager.java:56)] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:57:23.892 INFO  [main][Dialect.<init>(Dialect.java:175)] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+10:57:25.696 INFO  [main][JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:57:25.714 INFO  [main][LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:57:27.334 WARN  [main][JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:57:28.794 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Starting ProtocolHandler ["http-nio-8080"]
+10:57:28.849 INFO  [main][TomcatWebServer.start(TomcatWebServer.java:220)] Tomcat started on port(s): 8080 (http) with context path ''
+10:57:28.869 INFO  [main][CourseSelectionApplication.logStarted(StartupInfoLogger.java:61)] Started CourseSelectionApplication in 13.292 seconds (JVM running for 14.742)
+10:57:32.749 INFO  [http-nio-8080-exec-1][[/].log(DirectJDKLog.java:173)] Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:57:32.751 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:525)] Initializing Servlet 'dispatcherServlet'
+10:57:32.756 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:547)] Completed initialization in 4 ms
+10:57:47.311 INFO  [http-nio-8080-exec-5][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+10:57:56.893 INFO  [http-nio-8080-exec-7][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
