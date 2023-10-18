@@ -3,6 +3,7 @@ package com.javaProject.courseSelection.controller;
 import com.javaProject.courseSelection.service.ifs.EmployeeService;
 import com.javaProject.courseSelection.vo.EmployeeBasicRes;
 import com.javaProject.courseSelection.vo.EmployeeChangePasswordReq;
+import com.javaProject.courseSelection.vo.EmployeeCheckTokenReq;
 import com.javaProject.courseSelection.vo.EmployeeCreateReq;
 import com.javaProject.courseSelection.vo.EmployeeLoginReq;
 import com.javaProject.courseSelection.vo.EmployeeOnlyReq;
@@ -80,6 +81,14 @@ public class EmployeeController {
     public EmployeeBasicRes ForgetPassword(@RequestBody EmployeeOnlyReq eOnlyReq) {
         
         return eService.ForgetPassword(eOnlyReq.getEmployeeId());
+        
+    }
+    
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
+    @PostMapping("check_token")
+    public EmployeeBasicRes CheckToken(@RequestBody EmployeeCheckTokenReq eCheckTokenReq) {
+        
+        return eService.CheckToken(eCheckTokenReq.getToken());
         
     }
 

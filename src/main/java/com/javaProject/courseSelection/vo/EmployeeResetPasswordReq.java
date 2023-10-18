@@ -6,6 +6,7 @@ public class EmployeeResetPasswordReq {
     private String inputToken;
     private String newPassword;
     private String newPasswordCheck;
+    
     public String getEmployeeId() {
         return employeeId;
     }

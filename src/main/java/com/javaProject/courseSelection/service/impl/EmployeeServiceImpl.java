@@ -33,7 +33,8 @@ class EmployeeServiceImpl implements EmployeeService{
     private Logger logger = LoggerFactory.getLogger(getClass());  
     
     private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-    
+
+    private String forgetPasswordEmployeeId; 
     private String forgetPasswordToken; 
     
     @Autowired
@@ -199,7 +200,7 @@ class EmployeeServiceImpl implements EmployeeService{
         
         return new EmployeeBasicRes(EmployeeRtnCode.SUCCESSFUL.getCode(), EmployeeRtnCode.SUCCESSFUL.getMessage(), employeeId, null, 0, false);
          
-    } 
+    }
 
     @Override
     public EmployeeBasicRes Inactive(String employeeId) {
@@ -220,6 +221,12 @@ class EmployeeServiceImpl implements EmployeeService{
     @Override
     public EmployeeBasicRes ForgetPassword(String employeeId) {
         
+        if(!StringUtils.hasText(employeeId)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_EMPTY_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_EMPTY_ERROR.getMessage(), employeeId, null, 0, false);
+        }
+        if(!employeeId.matches(employeeIdPattern)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_FORMAT_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_FORMAT_ERROR.getMessage(), employeeId, null, 0, false);
+        }
         Employee res = eDao.findById(employeeId).get();
         if(res == null) {
             return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_NOT_EXIST_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_NOT_EXIST_ERROR.getMessage(), employeeId, null, 0, false);
@@ -263,6 +270,21 @@ class EmployeeServiceImpl implements EmployeeService{
         
     }
 
+
+    @Override
+    public EmployeeBasicRes CheckToken(String token) {
+
+        if(!StringUtils.hasText(token)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.TOKEN_ERROR.getCode(), EmployeeRtnCode.TOKEN_ERROR.getMessage(), null, null, 0, false);
+        }
+        if(!token.matches(forgetPasswordToken)) {
+            return new EmployeeBasicRes(EmployeeRtnCode.TOKEN_ERROR.getCode(), EmployeeRtnCode.TOKEN_ERROR.getMessage(), null, null, 0, false);
+        }
+        
+        return new EmployeeBasicRes(EmployeeRtnCode.SUCCESSFUL.getCode(), EmployeeRtnCode.SUCCESSFUL.getMessage(), null, null, 0, false);
+        
+    }
+    
     @Override
     public EmployeeBasicRes ResetPassword(String employeeId0, String inputToken0, String newPassword0, String newPasswordCheck0) {
         
@@ -313,11 +335,9 @@ class EmployeeServiceImpl implements EmployeeService{
         return null;
     }
 
-
     @Override
     public EmployeeBasicRes LoginCheck() {
         return null;
     }
         
-    
 }

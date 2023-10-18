@@ -20,6 +20,8 @@ public interface EmployeeService {
     public EmployeeBasicRes Inactive(String employeeId);
 //  人員 忘記密碼(寄驗證碼到信箱)
     public EmployeeBasicRes ForgetPassword(String employeeId);
+//  人員 忘記密碼(寄驗證碼到信箱)
+    public EmployeeBasicRes CheckToken(String token);
 //  人員 重設密碼(for 忘記密碼)
     public EmployeeBasicRes ResetPassword(String employeeId, String inputToken, String newPassword, String newPasswordCheck);
 //  人員 查詢 (其它)人員的所有資訊
