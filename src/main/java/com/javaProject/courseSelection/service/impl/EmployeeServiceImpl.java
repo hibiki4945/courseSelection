@@ -199,7 +199,7 @@ class EmployeeServiceImpl implements EmployeeService{
         
         return new EmployeeBasicRes(EmployeeRtnCode.SUCCESSFUL.getCode(), EmployeeRtnCode.SUCCESSFUL.getMessage(), employeeId, null, 0, false);
          
-    }
+    } 
 
     @Override
     public EmployeeBasicRes Inactive(String employeeId) {
