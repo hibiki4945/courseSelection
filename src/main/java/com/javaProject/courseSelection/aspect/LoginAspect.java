@@ -26,6 +26,7 @@ public class LoginAspect {
     @Pointcut("execution (* com.javaProject.courseSelection.controller.*.*(..)) && "
             + " !execution (* com.javaProject.courseSelection.controller.*.Login(..)) && "
             + " !execution (* com.javaProject.courseSelection.controller.*.ForgetPassword(..)) && "
+            + " !execution (* com.javaProject.courseSelection.controller.*.CheckToken(..)) && "
             + " !execution (* com.javaProject.courseSelection.controller.*.ResetPassword(..)) ")
     public void pointcut() {
         
