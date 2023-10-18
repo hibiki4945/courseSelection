@@ -1212,3 +1212,8 @@ java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "
 10:57:32.756 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:547)] Completed initialization in 4 ms
 10:57:47.311 INFO  [http-nio-8080-exec-5][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
 10:57:56.893 INFO  [http-nio-8080-exec-7][LoginAspect.around(LoginAspect.java:40)] api: ChangePassword
+11:11:57.433 INFO  [http-nio-8080-exec-9][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+11:27:43.832 INFO  [http-nio-8080-exec-4][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+11:35:09.255 INFO  [http-nio-8080-exec-1][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+11:35:14.316 INFO  [http-nio-8080-exec-3][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
+11:35:27.532 INFO  [http-nio-8080-exec-6][LoginAspect.around(LoginAspect.java:40)] api: LoginCheck
