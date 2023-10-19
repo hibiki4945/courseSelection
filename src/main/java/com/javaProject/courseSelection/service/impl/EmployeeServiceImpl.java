@@ -34,7 +34,7 @@ class EmployeeServiceImpl implements EmployeeService{
     
     private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
-    private String forgetPasswordEmployeeId; 
+//    private String forgetPasswordEmployeeId; 
     private String forgetPasswordToken; 
     
     @Autowired
@@ -118,7 +118,7 @@ class EmployeeServiceImpl implements EmployeeService{
         if(!res0.isPresent()) {
             System.out.println("!res0.isPresent()");
 //          記得返回 錯誤訊息
-            return new EmployeeBasicRes(EmployeeRtnCode.NOT_LOGIN_ERROR.getCode(), EmployeeRtnCode.NOT_LOGIN_ERROR.getMessage(), null, null, 0, false);
+            return new EmployeeBasicRes(EmployeeRtnCode.EMPLOYEE_ID_NOT_EXIST_ERROR.getCode(), EmployeeRtnCode.EMPLOYEE_ID_NOT_EXIST_ERROR.getMessage(), null, null, 0, false);
         }
         Employee res = res0.get();
         

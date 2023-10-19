@@ -1,7 +1,7 @@
 package com.javaProject.courseSelection.aspect;
 
-import com.javaProject.courseSelection.constants.EmployeeRtnCode;
-import com.javaProject.courseSelection.vo.EmployeeBasicRes;
+import com.javaProject.courseSelection.constants.StudentRtnCode;
+import com.javaProject.courseSelection.vo.StudentBasicRes;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -19,15 +19,15 @@ import javax.servlet.http.HttpSession;
 
 @Component
 @Aspect
-public class LoginAspect {
+public class StudentLoginAspect {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Pointcut("execution (* com.javaProject.courseSelection.controller.*.*(..)) && "
-            + " !execution (* com.javaProject.courseSelection.controller.*.Login(..)) && "
-            + " !execution (* com.javaProject.courseSelection.controller.*.ForgetPassword(..)) && "
-            + " !execution (* com.javaProject.courseSelection.controller.*.CheckToken(..)) && "
-            + " !execution (* com.javaProject.courseSelection.controller.*.ResetPassword(..)) ")
+    @Pointcut("execution (* com.javaProject.courseSelection.controller.StudentController.*(..)) && "
+            + " !execution (* com.javaProject.courseSelection.controller.StudentController.Login(..)) && "
+            + " !execution (* com.javaProject.courseSelection.controller.StudentController.ForgetPassword(..)) && "
+            + " !execution (* com.javaProject.courseSelection.controller.StudentController.CheckToken(..)) && "
+            + " !execution (* com.javaProject.courseSelection.controller.StudentController.ResetPassword(..)) ")
     public void pointcut() {
         
     }
@@ -45,7 +45,7 @@ public class LoginAspect {
         String account = (String)session.getAttribute("account");
         String pwd = (String)session.getAttribute("password");
         if(!StringUtils.hasText(account) || !StringUtils.hasText(pwd)) {
-            return new EmployeeBasicRes(EmployeeRtnCode.NOT_LOGIN_ERROR.getCode(), EmployeeRtnCode.NOT_LOGIN_ERROR.getMessage(), null, null, 0, false);
+            return new StudentBasicRes(StudentRtnCode.NOT_LOGIN_ERROR.getCode(), StudentRtnCode.NOT_LOGIN_ERROR.getMessage(), null, null, false);
         }
         Object result = pjp.proceed();
         
