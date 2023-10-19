@@ -131,7 +131,7 @@ public class StudentServiceImpl implements StudentService{
         
         return new StudentBasicRes(StudentRtnCode.SUCCESSFUL.getCode(), StudentRtnCode.SUCCESSFUL.getMessage(), res.getStudentId(), res.getName(), res.isActivation());
     
-    }
+    } 
 
     @Override
     public StudentBasicRes Logout(HttpSession httpSession) {
