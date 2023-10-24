@@ -133,7 +133,7 @@ public class EmployeeController {
     @PostMapping("delete")
     public EmployeeBasicRes Delete(@RequestBody EmployeeDeleteReq eDeleteReq) {
 
-        return eService.Delete(eDeleteReq);
+        return eService.Delete(eDeleteReq); 
         
     }
     
