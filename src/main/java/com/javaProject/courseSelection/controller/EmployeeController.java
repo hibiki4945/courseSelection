@@ -3,11 +3,16 @@ package com.javaProject.courseSelection.controller;
 import com.javaProject.courseSelection.service.ifs.EmployeeService;
 import com.javaProject.courseSelection.vo.EmployeeBasicRes;
 import com.javaProject.courseSelection.vo.EmployeeChangePasswordReq;
+import com.javaProject.courseSelection.vo.EmployeeChangeReq;
 import com.javaProject.courseSelection.vo.EmployeeCheckTokenReq;
 import com.javaProject.courseSelection.vo.EmployeeCreateReq;
+import com.javaProject.courseSelection.vo.EmployeeDeleteReq;
+import com.javaProject.courseSelection.vo.EmployeeFullRes;
 import com.javaProject.courseSelection.vo.EmployeeLoginReq;
 import com.javaProject.courseSelection.vo.EmployeeOnlyReq;
 import com.javaProject.courseSelection.vo.EmployeeResetPasswordReq;
+import com.javaProject.courseSelection.vo.EmployeeSearchPageRes;
+import com.javaProject.courseSelection.vo.EmployeeSearchReq;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,14 +29,6 @@ public class EmployeeController {
     @Autowired
     private EmployeeService eService;
 
-    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
-    @PostMapping("create")
-    public EmployeeBasicRes Create(@RequestBody EmployeeCreateReq eCreateReq) {
-
-        return eService.Create(eCreateReq);
-        
-    }
-    
     @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
     @PostMapping(value = "login")
     public EmployeeBasicRes Login(@RequestBody EmployeeLoginReq req, HttpSession httpSession) {
@@ -105,6 +102,38 @@ public class EmployeeController {
     public EmployeeBasicRes LoginCheck() {
         
         return eService.LoginCheck();
+        
+    }
+    
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
+    @PostMapping("create")
+    public EmployeeBasicRes Create(@RequestBody EmployeeCreateReq eCreateReq) {
+
+        return eService.Create(eCreateReq);
+        
+    }
+    
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
+    @PostMapping("change")
+    public EmployeeFullRes Change(@RequestBody EmployeeChangeReq eChangeReq) {
+
+        return eService.Change(eChangeReq);
+        
+    }
+    
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
+    @PostMapping("search")
+    public EmployeeSearchPageRes Search(@RequestBody EmployeeSearchReq eSearchReq) {
+
+        return eService.Search(eSearchReq);
+        
+    }
+    
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
+    @PostMapping("delete")
+    public EmployeeBasicRes Delete(@RequestBody EmployeeDeleteReq eDeleteReq) {
+
+        return eService.Delete(eDeleteReq);
         
     }
     

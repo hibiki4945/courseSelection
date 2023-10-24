@@ -2,14 +2,17 @@ package com.javaProject.courseSelection.service.ifs;
 
 import com.javaProject.courseSelection.vo.EmployeeBasicRes;
 import com.javaProject.courseSelection.vo.EmployeeChangePasswordReq;
+import com.javaProject.courseSelection.vo.EmployeeChangeReq;
 import com.javaProject.courseSelection.vo.EmployeeCreateReq;
+import com.javaProject.courseSelection.vo.EmployeeDeleteReq;
 import com.javaProject.courseSelection.vo.EmployeeFullRes;
+import com.javaProject.courseSelection.vo.EmployeeSearchPageRes;
+import com.javaProject.courseSelection.vo.EmployeeSearchReq;
 
 import javax.servlet.http.HttpSession;
 
 public interface EmployeeService {
-//  新增 人員
-    public EmployeeBasicRes Create(EmployeeCreateReq createReq);
+/////////////////  人員登入API  /////////////////
 //  人員 登入
     public EmployeeBasicRes Login(String employeeId, String password);
 //  人員 登出
@@ -24,9 +27,17 @@ public interface EmployeeService {
     public EmployeeBasicRes CheckToken(String token);
 //  人員 重設密碼(for 忘記密碼)
     public EmployeeBasicRes ResetPassword(String employeeId, String inputToken, String newPassword, String newPasswordCheck);
-//  人員 查詢 (其它)人員的所有資訊
-    public EmployeeFullRes CheckAllInfo(String employeeId, String targetEmployeeId);
 //  確認 是否登入
     public EmployeeBasicRes LoginCheck();
+
+/////////////////  人員管理API  /////////////////
+//  新增 人員(權限>=100)
+    public EmployeeBasicRes Create(EmployeeCreateReq createReq);
+//  修改 人員(權限>=100)
+    public EmployeeFullRes Change(EmployeeChangeReq changeReq);
+//  查詢 人員(權限>=100 or 本人)
+    public EmployeeSearchPageRes Search(EmployeeSearchReq searchReq);
+//  刪除 人員(權限>=100)
+    public EmployeeBasicRes Delete(EmployeeDeleteReq deleteReq);
     
 }

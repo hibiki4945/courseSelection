@@ -26,7 +26,11 @@ public enum EmployeeRtnCode {
     NEW_PASSWORD_CHECK_NOT_EQUAL_ERROR("400", "NewPasswordCheck Not Equal Error!"),
     PASSWORD_ERROR("400", "Password Error!"),
     DAO_ERROR("400", "Dao Error!"),
-    TOKEN_ERROR("400", "Token Error!");
+    TOKEN_ERROR("400", "Token Error!"),
+    BIRTHDAY_RANGE_ERROR("400", "Birthday Range Error!"),
+    BIRTHDAY_NOT_YET_ERROR("400", "Birthday Not Yet Error!"),
+    REGISTRATION_RANGE_ERROR("400", "Registration Range Error!"),
+    REGISTRATION_NOT_YET_ERROR("400", "Registration Not Yet Error!");
     
     private String code;
     
