@@ -778,3 +778,65 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 16:24:47.201 INFO  [http-nio-8080-exec-5][StudentLoginAspect.around3(StudentLoginAspect.java:103)] api: Search
 16:24:47.202 INFO  [http-nio-8080-exec-5][StudentServiceImpl.Search(StudentServiceImpl.java:425)] Student's Search Start!
 16:24:47.211 INFO  [http-nio-8080-exec-5][StudentServiceImpl.Search(StudentServiceImpl.java:440)] Student's Search End!
+16:55:11.138 INFO  [http-nio-8080-exec-2][EmployeeLoginAspect.around(EmployeeLoginAspect.java:55)] api: LoginCheck
+16:55:24.229 INFO  [http-nio-8080-exec-8][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+16:55:24.233 INFO  [http-nio-8080-exec-8][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+16:55:24.364 INFO  [http-nio-8080-exec-8][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+16:55:27.498 INFO  [http-nio-8080-exec-10][StudentLoginAspect.around3(StudentLoginAspect.java:103)] api: Search
+16:55:27.499 INFO  [http-nio-8080-exec-10][StudentServiceImpl.Search(StudentServiceImpl.java:425)] Student's Search Start!
+16:55:27.516 INFO  [http-nio-8080-exec-10][StudentServiceImpl.Search(StudentServiceImpl.java:440)] Student's Search End!
+16:55:36.765 INFO  [http-nio-8080-exec-3][StudentLoginAspect.around3(StudentLoginAspect.java:103)] api: Search
+16:55:36.765 INFO  [http-nio-8080-exec-3][StudentServiceImpl.Search(StudentServiceImpl.java:425)] Student's Search Start!
+16:55:36.774 INFO  [http-nio-8080-exec-3][StudentServiceImpl.Search(StudentServiceImpl.java:440)] Student's Search End!
+16:56:09.041 INFO  [http-nio-8080-exec-6][StudentLoginAspect.around(StudentLoginAspect.java:55)] api: Create
+16:56:09.043 INFO  [http-nio-8080-exec-6][StudentServiceImpl.Create(StudentServiceImpl.java:292)] Student's Create Start!
+16:56:09.435 INFO  [http-nio-8080-exec-6][StudentServiceImpl.Create(StudentServiceImpl.java:345)] Student's Create Done!
+16:56:09.508 INFO  [http-nio-8080-exec-8][StudentLoginAspect.around3(StudentLoginAspect.java:103)] api: Search
+16:56:09.510 INFO  [http-nio-8080-exec-8][StudentServiceImpl.Search(StudentServiceImpl.java:425)] Student's Search Start!
+16:56:09.519 INFO  [http-nio-8080-exec-8][StudentServiceImpl.Search(StudentServiceImpl.java:440)] Student's Search End!
+16:57:22.820 INFO  [http-nio-8080-exec-1][StudentLoginAspect.around2(StudentLoginAspect.java:79)] api: Change
+16:59:10.286 INFO  [http-nio-8080-exec-5][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+16:59:10.291 INFO  [http-nio-8080-exec-5][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+16:59:10.311 INFO  [http-nio-8080-exec-5][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+16:59:12.405 INFO  [http-nio-8080-exec-7][StudentLoginAspect.around3(StudentLoginAspect.java:103)] api: Search
+16:59:12.407 INFO  [http-nio-8080-exec-7][StudentServiceImpl.Search(StudentServiceImpl.java:425)] Student's Search Start!
+16:59:12.418 INFO  [http-nio-8080-exec-7][StudentServiceImpl.Search(StudentServiceImpl.java:440)] Student's Search End!
+16:59:14.629 INFO  [http-nio-8080-exec-6][StudentLoginAspect.around3(StudentLoginAspect.java:103)] api: Search
+16:59:14.629 INFO  [http-nio-8080-exec-6][StudentServiceImpl.Search(StudentServiceImpl.java:425)] Student's Search Start!
+16:59:14.636 INFO  [http-nio-8080-exec-6][StudentServiceImpl.Search(StudentServiceImpl.java:440)] Student's Search End!
+16:59:21.522 INFO  [http-nio-8080-exec-9][StudentLoginAspect.around3(StudentLoginAspect.java:103)] api: Search
+16:59:21.523 INFO  [http-nio-8080-exec-9][StudentServiceImpl.Search(StudentServiceImpl.java:425)] Student's Search Start!
+16:59:21.530 INFO  [http-nio-8080-exec-9][StudentServiceImpl.Search(StudentServiceImpl.java:440)] Student's Search End!
+16:59:24.514 INFO  [http-nio-8080-exec-10][StudentLoginAspect.around3(StudentLoginAspect.java:103)] api: Search
+16:59:24.516 INFO  [http-nio-8080-exec-10][StudentServiceImpl.Search(StudentServiceImpl.java:425)] Student's Search Start!
+16:59:24.520 INFO  [http-nio-8080-exec-10][StudentServiceImpl.Search(StudentServiceImpl.java:440)] Student's Search End!
+16:59:26.189 INFO  [http-nio-8080-exec-1][StudentLoginAspect.around3(StudentLoginAspect.java:103)] api: Search
+16:59:26.190 INFO  [http-nio-8080-exec-1][StudentServiceImpl.Search(StudentServiceImpl.java:425)] Student's Search Start!
+16:59:26.198 INFO  [http-nio-8080-exec-1][StudentServiceImpl.Search(StudentServiceImpl.java:440)] Student's Search End!
+16:59:56.192 INFO  [http-nio-8080-exec-3][StudentLoginAspect.around(StudentLoginAspect.java:55)] api: Create
+16:59:56.193 INFO  [http-nio-8080-exec-3][StudentServiceImpl.Create(StudentServiceImpl.java:292)] Student's Create Start!
+16:59:56.320 INFO  [http-nio-8080-exec-3][StudentServiceImpl.Create(StudentServiceImpl.java:345)] Student's Create Done!
+16:59:56.369 INFO  [http-nio-8080-exec-4][StudentLoginAspect.around3(StudentLoginAspect.java:103)] api: Search
+16:59:56.369 INFO  [http-nio-8080-exec-4][StudentServiceImpl.Search(StudentServiceImpl.java:425)] Student's Search Start!
+16:59:56.396 INFO  [http-nio-8080-exec-4][StudentServiceImpl.Search(StudentServiceImpl.java:440)] Student's Search End!
+17:00:04.880 INFO  [http-nio-8080-exec-7][StudentLoginAspect.around2(StudentLoginAspect.java:79)] api: Change
+17:00:04.885 INFO  [http-nio-8080-exec-7][StudentServiceImpl.Change(StudentServiceImpl.java:354)] Student's Change Start!
+17:00:04.952 INFO  [http-nio-8080-exec-7][StudentServiceImpl.Change(StudentServiceImpl.java:416)] Student's Change Done!
+17:00:04.997 INFO  [http-nio-8080-exec-6][StudentLoginAspect.around3(StudentLoginAspect.java:103)] api: Search
+17:00:04.997 INFO  [http-nio-8080-exec-6][StudentServiceImpl.Search(StudentServiceImpl.java:425)] Student's Search Start!
+17:00:05.006 INFO  [http-nio-8080-exec-6][StudentServiceImpl.Search(StudentServiceImpl.java:440)] Student's Search End!
+17:00:28.479 INFO  [http-nio-8080-exec-9][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+17:00:28.480 INFO  [http-nio-8080-exec-9][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+17:00:28.493 INFO  [http-nio-8080-exec-9][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+17:00:29.896 INFO  [http-nio-8080-exec-1][StudentLoginAspect.around3(StudentLoginAspect.java:103)] api: Search
+17:00:29.897 INFO  [http-nio-8080-exec-1][StudentServiceImpl.Search(StudentServiceImpl.java:425)] Student's Search Start!
+17:00:29.907 INFO  [http-nio-8080-exec-1][StudentServiceImpl.Search(StudentServiceImpl.java:440)] Student's Search End!
+17:00:30.680 INFO  [http-nio-8080-exec-2][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+17:00:30.681 INFO  [http-nio-8080-exec-2][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+17:00:30.694 INFO  [http-nio-8080-exec-2][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+17:00:31.824 INFO  [http-nio-8080-exec-3][StudentLoginAspect.around3(StudentLoginAspect.java:103)] api: Search
+17:00:31.826 INFO  [http-nio-8080-exec-3][StudentServiceImpl.Search(StudentServiceImpl.java:425)] Student's Search Start!
+17:00:31.835 INFO  [http-nio-8080-exec-3][StudentServiceImpl.Search(StudentServiceImpl.java:440)] Student's Search End!
+17:00:32.376 INFO  [http-nio-8080-exec-4][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+17:00:32.377 INFO  [http-nio-8080-exec-4][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+17:00:32.388 INFO  [http-nio-8080-exec-4][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
