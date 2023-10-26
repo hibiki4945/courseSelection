@@ -12,7 +12,7 @@ public class EmployeeCreateReq {
     
     private String email;
     
-    private LocalDate birthday;
+    private LocalDate birthday; 
 
     public String getEmployeeId() {
         return employeeId;
