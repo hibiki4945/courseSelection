@@ -3,11 +3,16 @@ package com.javaProject.courseSelection.controller;
 import com.javaProject.courseSelection.service.ifs.StudentService;
 import com.javaProject.courseSelection.vo.StudentBasicRes;
 import com.javaProject.courseSelection.vo.StudentChangePasswordReq;
+import com.javaProject.courseSelection.vo.StudentChangeReq;
 import com.javaProject.courseSelection.vo.StudentCheckTokenReq;
 import com.javaProject.courseSelection.vo.StudentCreateReq;
+import com.javaProject.courseSelection.vo.StudentDeleteReq;
+import com.javaProject.courseSelection.vo.StudentFullRes;
 import com.javaProject.courseSelection.vo.StudentLoginReq;
 import com.javaProject.courseSelection.vo.StudentOnlyReq;
 import com.javaProject.courseSelection.vo.StudentResetPasswordReq;
+import com.javaProject.courseSelection.vo.StudentSearchPageRes;
+import com.javaProject.courseSelection.vo.StudentSearchReq;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,14 +29,6 @@ public class StudentController {
     @Autowired
     private StudentService sService;
 
-    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
-    @PostMapping("create")
-    public StudentBasicRes Create(@RequestBody StudentCreateReq sCreateReq) {
-
-        return sService.Create(sCreateReq);
-        
-    }
-    
     @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
     @PostMapping(value = "login")
     public StudentBasicRes Login(@RequestBody StudentLoginReq req, HttpSession httpSession) {
@@ -105,6 +102,38 @@ public class StudentController {
     public StudentBasicRes LoginCheck() {
         
         return sService.LoginCheck();
+        
+    }
+
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
+    @PostMapping("create")
+    public StudentBasicRes Create(@RequestBody StudentCreateReq sCreateReq) {
+
+        return sService.Create(sCreateReq);
+        
+    }
+
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
+    @PostMapping("change")
+    public StudentFullRes Change(@RequestBody StudentChangeReq sChangeReq) {
+
+        return sService.Change(sChangeReq);
+        
+    }
+    
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
+    @PostMapping("search")
+    public StudentSearchPageRes Search(@RequestBody StudentSearchReq sSearchReq) {
+
+        return sService.Search(sSearchReq);
+        
+    }
+    
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true") 
+    @PostMapping("delete")
+    public StudentBasicRes Delete(@RequestBody StudentDeleteReq sDeleteReq) {
+
+        return sService.Delete(sDeleteReq); 
         
     }
     

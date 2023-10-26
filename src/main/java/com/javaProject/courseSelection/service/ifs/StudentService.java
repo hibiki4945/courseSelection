@@ -2,15 +2,17 @@ package com.javaProject.courseSelection.service.ifs;
 
 import com.javaProject.courseSelection.vo.StudentBasicRes;
 import com.javaProject.courseSelection.vo.StudentChangePasswordReq;
+import com.javaProject.courseSelection.vo.StudentChangeReq;
 import com.javaProject.courseSelection.vo.StudentCreateReq;
+import com.javaProject.courseSelection.vo.StudentDeleteReq;
 import com.javaProject.courseSelection.vo.StudentFullRes;
+import com.javaProject.courseSelection.vo.StudentSearchPageRes;
+import com.javaProject.courseSelection.vo.StudentSearchReq;
 
 import javax.servlet.http.HttpSession;
 
 public interface StudentService {
-
-//  新增 學生
-    public StudentBasicRes Create(StudentCreateReq createReq);
+/////////////////  學生登入API  /////////////////
 //  學生 登入
     public StudentBasicRes Login(String studentId, String password);
 //  學生 登出
@@ -29,5 +31,15 @@ public interface StudentService {
     public StudentFullRes CheckAllInfo(String studentId, String targetStudentId);
 //  確認 是否登入
     public StudentBasicRes LoginCheck();
+
+/////////////////  學生管理API  /////////////////
+//  新增 學生(權限>=100)
+    public StudentBasicRes Create(StudentCreateReq createReq);
+//  修改 學生(權限>=100)
+    public StudentFullRes Change(StudentChangeReq changeReq);
+//  查詢 學生(權限>=1 or 本人)
+    public StudentSearchPageRes Search(StudentSearchReq searchReq);
+//  刪除 學生(權限>=100)
+    public StudentBasicRes Delete(StudentDeleteReq deleteReq);
     
 }
