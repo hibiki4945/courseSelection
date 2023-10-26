@@ -1,0 +1,165 @@
+08:59:21.682 INFO  [main][CourseSelectionApplication.logStarting(StartupInfoLogger.java:55)] Starting CourseSelectionApplication using Java 17.0.2 on DESKTOP-RMCKRPA with PID 11956 (C:\Users\HIBIKI\git\courseSelection\bin\main started by HIBIKI in C:\Users\HIBIKI\git\courseSelection)
+08:59:21.712 INFO  [main][CourseSelectionApplication.logStartupProfileInfo(SpringApplication.java:631)] No active profile set, falling back to 1 default profile: "default"
+08:59:24.844 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:59:25.341 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] Finished Spring Data repository scanning in 431 ms. Found 5 JPA repository interfaces.
+08:59:31.006 INFO  [main][TomcatWebServer.initialize(TomcatWebServer.java:108)] Tomcat initialized with port(s): 8080 (http)
+08:59:31.086 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Initializing ProtocolHandler ["http-nio-8080"]
+08:59:31.091 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Starting service [Tomcat]
+08:59:31.092 INFO  [main][StandardEngine.log(DirectJDKLog.java:173)] Starting Servlet engine: [Apache Tomcat/9.0.80]
+08:59:32.005 INFO  [main][[/].log(DirectJDKLog.java:173)] Initializing Spring embedded WebApplicationContext
+08:59:32.006 INFO  [main][ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] Root WebApplicationContext: initialization completed in 9999 ms
+08:59:35.486 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:110)] HikariPool-1 - Starting...
+08:59:36.599 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:123)] HikariPool-1 - Start completed.
+08:59:37.800 INFO  [main][LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] HHH000204: Processing PersistenceUnitInfo [name: default]
+08:59:38.199 INFO  [main][Version.logVersion(Version.java:44)] HHH000412: Hibernate ORM core version 5.6.15.Final
+08:59:39.164 INFO  [main][Version.<clinit>(JavaReflectionManager.java:56)] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:59:40.191 INFO  [main][Dialect.<init>(Dialect.java:175)] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:59:44.483 INFO  [main][JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08:59:44.560 INFO  [main][LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:59:49.190 WARN  [main][JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:59:52.184 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Starting ProtocolHandler ["http-nio-8080"]
+08:59:52.304 INFO  [main][TomcatWebServer.start(TomcatWebServer.java:220)] Tomcat started on port(s): 8080 (http) with context path ''
+08:59:52.357 INFO  [main][CourseSelectionApplication.logStarted(StartupInfoLogger.java:61)] Started CourseSelectionApplication in 32.551 seconds (JVM running for 35.224)
+09:00:25.102 INFO  [http-nio-8080-exec-1][[/].log(DirectJDKLog.java:173)] Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:00:25.104 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:525)] Initializing Servlet 'dispatcherServlet'
+09:00:25.112 INFO  [http-nio-8080-exec-1][DispatcherServlet.initServletBean(FrameworkServlet.java:547)] Completed initialization in 7 ms
+09:00:25.483 INFO  [http-nio-8080-exec-2][EmployeeLoginAspect.around(EmployeeLoginAspect.java:55)] api: LoginCheck
+09:00:25.726 WARN  [http-nio-8080-exec-2][SessionIdGeneratorBase.log(DirectJDKLog.java:173)] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [231] milliseconds.
+09:30:46.635 INFO  [http-nio-8080-exec-10][EmployeeLoginAspect.around(EmployeeLoginAspect.java:55)] api: LoginCheck
+09:36:04.643 INFO  [http-nio-8080-exec-8][EmployeeLoginAspect.around(EmployeeLoginAspect.java:55)] api: LoginCheck
+10:34:13.993 INFO  [http-nio-8080-exec-7][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:35:01.061 INFO  [http-nio-8080-exec-10][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:35:23.227 INFO  [http-nio-8080-exec-2][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:35:52.265 INFO  [http-nio-8080-exec-5][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:35:52.274 INFO  [http-nio-8080-exec-5][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+10:35:52.787 INFO  [http-nio-8080-exec-5][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+10:37:51.865 INFO  [http-nio-8080-exec-9][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:38:01.622 INFO  [http-nio-8080-exec-2][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:38:01.624 INFO  [http-nio-8080-exec-2][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+10:38:01.635 INFO  [http-nio-8080-exec-2][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+10:38:28.784 INFO  [http-nio-8080-exec-6][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:38:35.757 INFO  [http-nio-8080-exec-7][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:38:35.757 INFO  [http-nio-8080-exec-7][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+10:38:35.774 INFO  [http-nio-8080-exec-7][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+10:39:12.100 INFO  [http-nio-8080-exec-8][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:39:12.101 INFO  [http-nio-8080-exec-8][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+10:39:12.117 INFO  [http-nio-8080-exec-8][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+10:40:23.807 INFO  [http-nio-8080-exec-10][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:40:32.908 INFO  [http-nio-8080-exec-3][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:40:32.910 INFO  [http-nio-8080-exec-3][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+10:40:32.918 INFO  [http-nio-8080-exec-3][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+10:55:52.276 INFO  [http-nio-8080-exec-6][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:56:02.669 INFO  [http-nio-8080-exec-8][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:56:02.670 INFO  [http-nio-8080-exec-8][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+10:56:02.756 INFO  [http-nio-8080-exec-8][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+10:56:07.544 INFO  [http-nio-8080-exec-9][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:56:07.545 INFO  [http-nio-8080-exec-9][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+10:56:07.698 INFO  [http-nio-8080-exec-9][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+10:56:18.713 INFO  [http-nio-8080-exec-1][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:56:18.714 INFO  [http-nio-8080-exec-1][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+10:56:18.735 INFO  [http-nio-8080-exec-1][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+10:56:21.974 INFO  [http-nio-8080-exec-2][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+10:56:21.974 INFO  [http-nio-8080-exec-2][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+10:56:21.983 INFO  [http-nio-8080-exec-2][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+11:22:16.869 INFO  [http-nio-8080-exec-4][EmployeeLoginAspect.around(EmployeeLoginAspect.java:55)] api: Create
+11:22:33.394 INFO  [http-nio-8080-exec-2][EmployeeLoginAspect.around(EmployeeLoginAspect.java:55)] api: Create
+11:22:33.404 INFO  [http-nio-8080-exec-2][EmployeeServiceImpl.Create(EmployeeServiceImpl.java:287)] Employee's Create Start!
+11:22:58.139 INFO  [http-nio-8080-exec-6][EmployeeLoginAspect.around(EmployeeLoginAspect.java:55)] api: Create
+11:22:58.139 INFO  [http-nio-8080-exec-6][EmployeeServiceImpl.Create(EmployeeServiceImpl.java:287)] Employee's Create Start!
+11:24:32.171 INFO  [http-nio-8080-exec-5][EmployeeLoginAspect.around(EmployeeLoginAspect.java:55)] api: Create
+11:24:46.157 INFO  [http-nio-8080-exec-10][EmployeeLoginAspect.around(EmployeeLoginAspect.java:55)] api: Create
+11:24:46.160 INFO  [http-nio-8080-exec-10][EmployeeServiceImpl.Create(EmployeeServiceImpl.java:287)] Employee's Create Start!
+11:25:15.400 INFO  [http-nio-8080-exec-2][EmployeeLoginAspect.around(EmployeeLoginAspect.java:55)] api: Create
+11:25:15.401 INFO  [http-nio-8080-exec-2][EmployeeServiceImpl.Create(EmployeeServiceImpl.java:287)] Employee's Create Start!
+11:25:32.172 INFO  [http-nio-8080-exec-6][EmployeeLoginAspect.around(EmployeeLoginAspect.java:55)] api: Create
+11:25:32.173 INFO  [http-nio-8080-exec-6][EmployeeServiceImpl.Create(EmployeeServiceImpl.java:287)] Employee's Create Start!
+11:25:40.258 INFO  [http-nio-8080-exec-5][EmployeeLoginAspect.around(EmployeeLoginAspect.java:55)] api: Create
+11:25:40.260 INFO  [http-nio-8080-exec-5][EmployeeServiceImpl.Create(EmployeeServiceImpl.java:287)] Employee's Create Start!
+11:25:46.501 INFO  [http-nio-8080-exec-8][EmployeeLoginAspect.around(EmployeeLoginAspect.java:55)] api: Create
+11:25:46.502 INFO  [http-nio-8080-exec-8][EmployeeServiceImpl.Create(EmployeeServiceImpl.java:287)] Employee's Create Start!
+11:25:47.424 INFO  [http-nio-8080-exec-8][EmployeeServiceImpl.Create(EmployeeServiceImpl.java:343)] Employee's Create Done!
+11:27:56.730 INFO  [http-nio-8080-exec-10][EmployeeLoginAspect.around(EmployeeLoginAspect.java:55)] api: Create
+11:28:09.650 INFO  [http-nio-8080-exec-6][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+11:28:09.652 INFO  [http-nio-8080-exec-6][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+11:28:09.686 INFO  [http-nio-8080-exec-6][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+11:28:36.980 INFO  [http-nio-8080-exec-7][EmployeeLoginAspect.around(EmployeeLoginAspect.java:55)] api: Create
+11:28:36.982 INFO  [http-nio-8080-exec-7][EmployeeServiceImpl.Create(EmployeeServiceImpl.java:287)] Employee's Create Start!
+11:28:37.132 INFO  [http-nio-8080-exec-7][EmployeeServiceImpl.Create(EmployeeServiceImpl.java:343)] Employee's Create Done!
+11:28:37.180 INFO  [http-nio-8080-exec-8][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+11:28:37.181 INFO  [http-nio-8080-exec-8][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+11:28:37.202 INFO  [http-nio-8080-exec-8][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+11:30:43.552 INFO  [http-nio-8080-exec-10][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+14:33:51.396 INFO  [http-nio-8080-exec-6][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+14:33:51.515 INFO  [http-nio-8080-exec-6][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+14:33:51.674 INFO  [http-nio-8080-exec-6][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+14:34:47.961 INFO  [http-nio-8080-exec-8][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+14:34:47.963 INFO  [http-nio-8080-exec-8][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+14:34:48.085 INFO  [http-nio-8080-exec-8][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+14:35:01.654 INFO  [http-nio-8080-exec-10][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+14:35:01.655 INFO  [http-nio-8080-exec-10][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+14:35:01.722 INFO  [http-nio-8080-exec-10][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+14:35:13.855 INFO  [http-nio-8080-exec-3][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+14:35:13.856 INFO  [http-nio-8080-exec-3][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+14:35:13.882 INFO  [http-nio-8080-exec-3][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+14:35:48.940 INFO  [http-nio-8080-exec-5][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+14:35:48.941 INFO  [http-nio-8080-exec-5][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+14:35:48.954 INFO  [http-nio-8080-exec-5][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+14:35:51.839 INFO  [http-nio-8080-exec-7][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+14:35:51.843 INFO  [http-nio-8080-exec-7][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+14:35:51.868 INFO  [http-nio-8080-exec-7][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+14:40:59.802 INFO  [http-nio-8080-exec-8][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+14:41:08.445 INFO  [http-nio-8080-exec-1][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+14:41:08.449 INFO  [http-nio-8080-exec-1][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+14:41:08.475 INFO  [http-nio-8080-exec-1][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+14:41:21.062 INFO  [http-nio-8080-exec-5][EmployeeLoginAspect.around2(EmployeeLoginAspect.java:79)] api: Change
+14:41:21.074 INFO  [http-nio-8080-exec-5][EmployeeServiceImpl.Change(EmployeeServiceImpl.java:352)] Employee's Change Start!
+14:41:21.566 INFO  [http-nio-8080-exec-5][EmployeeServiceImpl.Change(EmployeeServiceImpl.java:417)] Employee's Change Done!
+14:41:21.644 INFO  [http-nio-8080-exec-6][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
+14:41:21.645 INFO  [http-nio-8080-exec-6][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:426)] Employee's Search Start!
+14:41:21.661 INFO  [http-nio-8080-exec-6][EmployeeServiceImpl.Search(EmployeeServiceImpl.java:477)] Employee's Search End!
+14:42:09.906 INFO  [main][CourseSelectionApplication.logStarting(StartupInfoLogger.java:55)] Starting CourseSelectionApplication using Java 17.0.2 on DESKTOP-RMCKRPA with PID 12488 (C:\Users\HIBIKI\git\courseSelection\bin\main started by HIBIKI in C:\Users\HIBIKI\git\courseSelection)
+14:42:09.922 INFO  [main][CourseSelectionApplication.logStartupProfileInfo(SpringApplication.java:631)] No active profile set, falling back to 1 default profile: "default"
+14:42:14.319 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132)] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:42:14.824 INFO  [main][RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201)] Finished Spring Data repository scanning in 438 ms. Found 5 JPA repository interfaces.
+14:42:17.085 INFO  [main][TomcatWebServer.initialize(TomcatWebServer.java:108)] Tomcat initialized with port(s): 8080 (http)
+14:42:17.112 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Initializing ProtocolHandler ["http-nio-8080"]
+14:42:17.120 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Starting service [Tomcat]
+14:42:17.121 INFO  [main][StandardEngine.log(DirectJDKLog.java:173)] Starting Servlet engine: [Apache Tomcat/9.0.80]
+14:42:17.498 INFO  [main][[/].log(DirectJDKLog.java:173)] Initializing Spring embedded WebApplicationContext
+14:42:17.499 INFO  [main][ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292)] Root WebApplicationContext: initialization completed in 7340 ms
+14:42:17.856 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:110)] HikariPool-1 - Starting...
+14:42:18.592 INFO  [main][HikariDataSource.getConnection(HikariDataSource.java:123)] HikariPool-1 - Start completed.
+14:42:19.297 INFO  [main][LogHelper.logPersistenceUnitInformation(LogHelper.java:31)] HHH000204: Processing PersistenceUnitInfo [name: default]
+14:42:19.468 INFO  [main][Version.logVersion(Version.java:44)] HHH000412: Hibernate ORM core version 5.6.15.Final
+14:42:20.345 INFO  [main][Version.<clinit>(JavaReflectionManager.java:56)] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:42:21.009 INFO  [main][Dialect.<init>(Dialect.java:175)] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+14:42:23.938 INFO  [main][JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:42:23.988 INFO  [main][LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437)] Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:42:27.069 WARN  [main][JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:223)] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:42:28.459 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Starting ProtocolHandler ["http-nio-8080"]
+14:42:28.473 WARN  [main][AnnotationConfigServletWebServerApplicationContext.refresh(AbstractApplicationContext.java:591)] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+14:42:28.478 INFO  [main][LocalContainerEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:651)] Closing JPA EntityManagerFactory for persistence unit 'default'
+14:42:28.484 INFO  [main][HikariDataSource.close(HikariDataSource.java:350)] HikariPool-1 - Shutdown initiated...
+14:42:28.511 INFO  [main][HikariDataSource.close(HikariDataSource.java:352)] HikariPool-1 - Shutdown completed.
+14:42:28.517 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Pausing ProtocolHandler ["http-nio-8080"]
+14:42:28.517 INFO  [main][StandardService.log(DirectJDKLog.java:173)] Stopping service [Tomcat]
+14:42:28.528 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Stopping ProtocolHandler ["http-nio-8080"]
+14:42:28.529 INFO  [main][Http11NioProtocol.log(DirectJDKLog.java:173)] Destroying ProtocolHandler ["http-nio-8080"]
+14:42:28.555 INFO  [main][ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:136)] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+14:42:28.724 ERROR [main][LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:40)] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+14:45:57.666 INFO  [http-nio-8080-exec-8][EmployeeLoginAspect.around3(EmployeeLoginAspect.java:103)] api: Search
